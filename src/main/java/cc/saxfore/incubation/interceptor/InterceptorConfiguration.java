@@ -23,7 +23,10 @@ public class InterceptorConfiguration implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(loginInterceptor).addPathPatterns("/incubation/user/*");
-        registry.addInterceptor(apiInterceptor).addPathPatterns("/incubation/api/*");
+
+        // pathPatterns不能加server.servlet.context-path的前缀/incubation，否则拦截器路径匹配不到
+        registry.addInterceptor(loginInterceptor).addPathPatterns("/view/user/**");
+        registry.addInterceptor(apiInterceptor).addPathPatterns("/api/user/**");
+        WebMvcConfigurer.super.addInterceptors(registry);
     }
 }

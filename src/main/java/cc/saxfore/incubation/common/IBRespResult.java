@@ -1,6 +1,12 @@
 package cc.saxfore.incubation.common;
 
 import cc.saxfore.incubation.model.IBResponse;
+import com.google.gson.Gson;
+import org.springframework.http.MediaType;
+
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 /**
  * 项目名称：incubation
@@ -37,5 +43,37 @@ public class IBRespResult {
         return new IBResponse(ERROR, msg, "");
     }
 
+    public static <T> void success(HttpServletResponse response, String msg) throws IOException {
+        if (response != null) {
+            response.setContentType(MediaType.APPLICATION_JSON_UTF8_VALUE);
+            response.setCharacterEncoding("UTF-8");
+            PrintWriter responseWriter = response.getWriter();
+            responseWriter.print(new Gson().toJson(success(msg)));
+            responseWriter.flush();
+            responseWriter.close();
+        }
+    }
 
+    public static <T> void success(HttpServletResponse httpServletResponse, T data) throws IOException {
+        if (httpServletResponse != null) {
+//            httpServletResponse.setContentType("text/html;charset=utf-8");
+            httpServletResponse.setContentType(MediaType.APPLICATION_JSON_UTF8_VALUE);
+            httpServletResponse.setCharacterEncoding("UTF-8");
+            PrintWriter responseWriter = httpServletResponse.getWriter();
+            responseWriter.print(new Gson().toJson(success(data)));
+            responseWriter.flush();
+            responseWriter.close();
+        }
+    }
+
+    public static void fail(HttpServletResponse response, String msg) throws IOException {
+        if (response != null) {
+            response.setContentType(MediaType.APPLICATION_JSON_UTF8_VALUE);
+            response.setCharacterEncoding("UTF-8");
+            PrintWriter responseWriter = response.getWriter();
+            responseWriter.print(new Gson().toJson(fail(msg)));
+            responseWriter.flush();
+            responseWriter.close();
+        }
+    }
 }

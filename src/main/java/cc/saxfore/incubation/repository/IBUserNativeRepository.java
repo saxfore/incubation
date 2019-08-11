@@ -23,16 +23,19 @@ public class IBUserNativeRepository {
     @PersistenceContext
     EntityManager entityManager;
 
-    public List<IBUser> queryUserList(String username, String password) {
+    public List<IBUser> queryUserList(long delFlag) {
         StringBuilder sql = new StringBuilder();
-        sql.append("select * from IBUser");
-        sql.append("");
-        sql.append("");
-        sql.append("");
-        sql.append("");
-        Query nativeQuery = entityManager.createNativeQuery(sql.toString())
-                .setParameter("username", username)
-                .setParameter("password", password);
+        sql.append(" select id, username, password, del_flag delFlag ");
+        sql.append(" from IB_User");
+        sql.append(" where 1=1");
+        if (delFlag >= 0) {
+            sql.append(" and del_flag=:delFlag");
+        }
+
+
+        Query nativeQuery = entityManager.createNativeQuery(sql.toString());
+//        nativeQuery.setParameter("username", username).setParameter("password", password);
+
         List<IBUser> userList = nativeQuery.unwrap(NativeQueryImpl.class).setResultTransformer(Transformers.aliasToBean(IBUser.class)).getResultList();
         return userList;
     }

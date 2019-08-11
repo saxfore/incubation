@@ -11,15 +11,14 @@ import java.io.Serializable;
  */
 public class IBRequest<T> implements Serializable {
 
-    protected IBRequestHeader header;
-    protected IBPage page;
+    protected IBHeader header;
     protected T body;
 
-    public IBRequestHeader getHeader() {
+    public IBHeader getHeader() {
         return header;
     }
 
-    public void setHeader(IBRequestHeader header) {
+    public void setHeader(IBHeader header) {
         this.header = header;
     }
 

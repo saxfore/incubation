@@ -1,9 +1,10 @@
 package cc.saxfore.incubation.interceptor;
 
-import cc.saxfore.incubation.common.IBApiURL;
+import cc.saxfore.incubation.annotation.IBApiURL;
 import cc.saxfore.incubation.common.IBRespResult;
-import cc.saxfore.incubation.common.IBServletRespResult;
 import cc.saxfore.incubation.common.IBStringUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -21,12 +22,14 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Component
 public class ApiInterceptor extends HandlerInterceptorAdapter {
+    private static final Logger log = LoggerFactory.getLogger(ApiInterceptor.class);
     private static final String specialToken = "incubation";
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        IBApiURL apiURL = null;
+        log.info("ApiInterceptor preHandle ...");
 
+        IBApiURL apiURL = null;
         if (handler instanceof HandlerMethod) {
             HandlerMethod method = (HandlerMethod) handler;
             apiURL = method.getMethodAnnotation(IBApiURL.class);
@@ -35,7 +38,7 @@ public class ApiInterceptor extends HandlerInterceptorAdapter {
         if (apiURL != null) {
             String token = request.getParameter("token");
             if (IBStringUtil.isBlank(token) || !specialToken.equalsIgnoreCase(token)) {
-                IBServletRespResult.success(response, IBRespResult.fail("验证未通过！"));
+                IBRespResult.fail(response, "验证未通过！");
                 return false;
             }
         }
@@ -45,16 +48,19 @@ public class ApiInterceptor extends HandlerInterceptorAdapter {
 
     @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
+        log.info("ApiInterceptor postHandle ...");
         super.postHandle(request, response, handler, modelAndView);
     }
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
+        log.info("ApiInterceptor afterCompletion ...");
         super.afterCompletion(request, response, handler, ex);
     }
 
     @Override
     public void afterConcurrentHandlingStarted(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        log.info("ApiInterceptor afterConcurrentHandlingStarted ...");
         super.afterConcurrentHandlingStarted(request, response, handler);
     }
 

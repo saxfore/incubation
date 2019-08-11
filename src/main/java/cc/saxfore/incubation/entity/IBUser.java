@@ -20,7 +20,7 @@ public class IBUser implements Serializable {
     private String id;
     private String username;
     private String password;
-    private int delFlag;
+    private long delFlag;
 
     public String getId() {
         return id;
@@ -46,11 +46,11 @@ public class IBUser implements Serializable {
         this.password = password;
     }
 
-    public int getDelFlag() {
+    public long getDelFlag() {
         return delFlag;
     }
 
-    public void setDelFlag(int delFlag) {
+    public void setDelFlag(long delFlag) {
         this.delFlag = delFlag;
     }
 }

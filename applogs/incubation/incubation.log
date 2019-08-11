@@ -1,0 +1,1317 @@
+2019-08-11 15:34:03,258 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 50] Starting IncubationApplication on MacBook.local with PID 1766 (/Users/john/gitHub-workspace/incubation/target/classes started by john in /Users/john/gitHub-workspace/incubation)
+2019-08-11 15:34:03,262 INFO [main] c.s.incubation.IncubationApplication [SpringApplication.java : 647] No active profile set, falling back to default profiles: default
+2019-08-11 15:34:03,667 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-11 15:34:03,714 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 42ms. Found 1 repository interfaces.
+2019-08-11 15:34:03,959 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7c4c72b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 15:34:04,189 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9090 (http)
+2019-08-11 15:34:04,202 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9090"]
+2019-08-11 15:34:04,210 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-08-11 15:34:04,210 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-11 15:34:04,281 INFO [main] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-08-11 15:34:04,281 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 987 ms
+2019-08-11 15:34:04,320 INFO [main] c.s.i.filter.IncubationFilter [IncubationFilter.java : 29] IncubationFilter init ...
+2019-08-11 15:34:04,414 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-08-11 15:34:04,599 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-08-11 15:34:04,639 INFO [main] o.h.jpa.internal.util.LogHelper [LogHelper.java : 31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-11 15:34:04,688 INFO [main] org.hibernate.Version [Version.java : 46] HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-11 15:34:04,689 INFO [main] org.hibernate.cfg.Environment [Environment.java : 213] HHH000206: hibernate.properties not found
+2019-08-11 15:34:04,778 INFO [main] o.h.annotations.common.Version [JavaReflectionManager.java : 49] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-11 15:34:04,898 INFO [main] org.hibernate.dialect.Dialect [Dialect.java : 157] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-08-11 15:34:05,298 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 15:34:05,760 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 15:34:05,798 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [JpaBaseConfiguration.java : 226] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-11 15:34:05,966 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9090"]
+2019-08-11 15:34:06,004 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9090 (http) with context path '/incubation'
+2019-08-11 15:34:06,006 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 59] Started IncubationApplication in 23.031 seconds (JVM running for 28.635)
+2019-08-11 15:36:24,247 INFO [http-nio-9090-exec-5] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-11 15:36:24,248 INFO [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-08-11 15:36:24,257 INFO [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 9 ms
+2019-08-11 15:36:24,263 INFO [http-nio-9090-exec-5] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 15:36:24,414 INFO [http-nio-9090-exec-5] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:150ms
+2019-08-11 15:36:31,707 INFO [http-nio-9090-exec-6] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 15:36:31,713 INFO [http-nio-9090-exec-6] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/2, 耗时:6ms
+2019-08-11 15:36:35,450 INFO [http-nio-9090-exec-8] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 15:36:35,456 INFO [http-nio-9090-exec-8] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/3, 耗时:5ms
+2019-08-11 15:37:25,385 INFO [http-nio-9090-exec-10] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 15:37:25,389 INFO [http-nio-9090-exec-10] c.s.i.controller.IBIndexController [IBIndexController.java : 30] username = [wangjiang], password = [123456]
+2019-08-11 15:37:25,403 INFO [http-nio-9090-exec-10] o.h.h.i.QueryTranslatorFactoryInitiator [QueryTranslatorFactoryInitiator.java : 47] HHH000397: Using ASTQueryTranslatorFactory
+2019-08-11 15:37:25,477 INFO [http-nio-9090-exec-10] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/user/index, 耗时:92ms
+2019-08-11 15:37:25,478 INFO [http-nio-9090-exec-10] c.s.i.filter.IncubationFilter [IncubationFilter.java : 71] ----请求参数:{username=[wangjiang];password=[123456];} ----
+2019-08-11 15:41:05,103 INFO [Thread-49] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 15:41:05,104 INFO [Thread-49] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 15:41:05,108 INFO [Thread-49] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] DatebookHikariCP - Shutdown initiated...
+2019-08-11 15:41:05,112 INFO [Thread-49] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] DatebookHikariCP - Shutdown completed.
+2019-08-11 15:41:05,124 INFO [Thread-49] c.s.i.filter.IncubationFilter [IncubationFilter.java : 49] IncubationFilter destroy ...
+2019-08-11 15:42:07,063 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 50] Starting IncubationApplication on MacBook.local with PID 1797 (/Users/john/gitHub-workspace/incubation/target/classes started by john in /Users/john/gitHub-workspace/incubation)
+2019-08-11 15:42:07,066 INFO [main] c.s.incubation.IncubationApplication [SpringApplication.java : 647] No active profile set, falling back to default profiles: default
+2019-08-11 15:42:07,554 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-11 15:42:07,613 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 52ms. Found 1 repository interfaces.
+2019-08-11 15:42:07,874 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$714c4186] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 15:42:08,125 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9090 (http)
+2019-08-11 15:42:08,137 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9090"]
+2019-08-11 15:42:08,144 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-08-11 15:42:08,145 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-11 15:42:08,220 INFO [main] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-08-11 15:42:08,220 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1124 ms
+2019-08-11 15:42:08,258 INFO [main] c.s.i.filter.IncubationFilter [IncubationFilter.java : 29] IncubationFilter init ...
+2019-08-11 15:42:08,347 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-08-11 15:42:08,525 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-08-11 15:42:08,561 INFO [main] o.h.jpa.internal.util.LogHelper [LogHelper.java : 31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-11 15:42:08,620 INFO [main] org.hibernate.Version [Version.java : 46] HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-11 15:42:08,621 INFO [main] org.hibernate.cfg.Environment [Environment.java : 213] HHH000206: hibernate.properties not found
+2019-08-11 15:42:08,727 INFO [main] o.h.annotations.common.Version [JavaReflectionManager.java : 49] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-11 15:42:08,856 INFO [main] org.hibernate.dialect.Dialect [Dialect.java : 157] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-08-11 15:42:09,297 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 15:42:09,754 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 15:42:09,789 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [JpaBaseConfiguration.java : 226] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-11 15:42:09,967 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9090"]
+2019-08-11 15:42:10,005 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9090 (http) with context path '/incubation'
+2019-08-11 15:42:10,007 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 59] Started IncubationApplication in 23.24 seconds (JVM running for 28.906)
+2019-08-11 15:42:21,927 INFO [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-11 15:42:21,927 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-08-11 15:42:21,934 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 6 ms
+2019-08-11 15:42:21,941 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 15:42:21,961 INFO [http-nio-9090-exec-1] c.s.i.controller.IBIndexController [IBIndexController.java : 30] username = [wangjiang], password = [123456]
+2019-08-11 15:42:21,983 INFO [http-nio-9090-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator [QueryTranslatorFactoryInitiator.java : 47] HHH000397: Using ASTQueryTranslatorFactory
+2019-08-11 15:42:22,134 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/user/index, 耗时:193ms
+2019-08-11 15:42:22,135 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 71] ----请求参数:{username=[wangjiang];password=[123456];} ----
+2019-08-11 15:42:24,003 INFO [http-nio-9090-exec-2] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 15:42:24,004 INFO [http-nio-9090-exec-2] c.s.i.controller.IBIndexController [IBIndexController.java : 30] username = [wangjiang], password = [123456]
+2019-08-11 15:42:24,008 INFO [http-nio-9090-exec-2] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/user/index, 耗时:5ms
+2019-08-11 15:42:24,008 INFO [http-nio-9090-exec-2] c.s.i.filter.IncubationFilter [IncubationFilter.java : 71] ----请求参数:{username=[wangjiang];password=[123456];} ----
+2019-08-11 15:42:38,646 INFO [Thread-49] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 15:42:38,647 INFO [Thread-49] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 15:42:38,648 INFO [Thread-49] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] DatebookHikariCP - Shutdown initiated...
+2019-08-11 15:42:38,653 INFO [Thread-49] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] DatebookHikariCP - Shutdown completed.
+2019-08-11 15:42:38,667 INFO [Thread-49] c.s.i.filter.IncubationFilter [IncubationFilter.java : 49] IncubationFilter destroy ...
+2019-08-11 15:46:45,885 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 50] Starting IncubationApplication on MacBook.local with PID 1810 (/Users/john/gitHub-workspace/incubation/target/classes started by john in /Users/john/gitHub-workspace/incubation)
+2019-08-11 15:46:45,888 INFO [main] c.s.incubation.IncubationApplication [SpringApplication.java : 647] No active profile set, falling back to default profiles: default
+2019-08-11 15:46:46,322 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-11 15:46:46,378 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 51ms. Found 1 repository interfaces.
+2019-08-11 15:46:46,613 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1c5e39b7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 15:46:46,854 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9090 (http)
+2019-08-11 15:46:46,867 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9090"]
+2019-08-11 15:46:46,874 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-08-11 15:46:46,875 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-11 15:46:46,949 INFO [main] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-08-11 15:46:46,949 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1031 ms
+2019-08-11 15:46:46,984 INFO [main] c.s.i.filter.IncubationFilter [IncubationFilter.java : 29] IncubationFilter init ...
+2019-08-11 15:46:47,077 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-08-11 15:46:47,271 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-08-11 15:46:47,316 INFO [main] o.h.jpa.internal.util.LogHelper [LogHelper.java : 31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-11 15:46:47,368 INFO [main] org.hibernate.Version [Version.java : 46] HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-11 15:46:47,369 INFO [main] org.hibernate.cfg.Environment [Environment.java : 213] HHH000206: hibernate.properties not found
+2019-08-11 15:46:47,470 INFO [main] o.h.annotations.common.Version [JavaReflectionManager.java : 49] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-11 15:46:47,578 INFO [main] org.hibernate.dialect.Dialect [Dialect.java : 157] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-08-11 15:46:48,042 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 15:46:48,495 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 15:46:48,532 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [JpaBaseConfiguration.java : 226] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-11 15:46:48,701 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9090"]
+2019-08-11 15:46:48,742 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9090 (http) with context path '/incubation'
+2019-08-11 15:46:48,745 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 59] Started IncubationApplication in 23.132 seconds (JVM running for 28.772)
+2019-08-11 15:47:26,983 INFO [Thread-49] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 15:47:26,985 INFO [Thread-49] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 15:47:26,987 INFO [Thread-49] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] DatebookHikariCP - Shutdown initiated...
+2019-08-11 15:47:26,993 INFO [Thread-49] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] DatebookHikariCP - Shutdown completed.
+2019-08-11 15:47:27,004 INFO [Thread-49] c.s.i.filter.IncubationFilter [IncubationFilter.java : 49] IncubationFilter destroy ...
+2019-08-11 15:50:20,378 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 50] Starting IncubationApplication on MacBook.local with PID 1828 (/Users/john/gitHub-workspace/incubation/target/classes started by john in /Users/john/gitHub-workspace/incubation)
+2019-08-11 15:50:20,382 INFO [main] c.s.incubation.IncubationApplication [SpringApplication.java : 647] No active profile set, falling back to default profiles: default
+2019-08-11 15:50:20,836 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-11 15:50:20,885 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 44ms. Found 1 repository interfaces.
+2019-08-11 15:50:21,174 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f33a85fb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 15:50:21,500 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9090 (http)
+2019-08-11 15:50:21,512 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9090"]
+2019-08-11 15:50:21,522 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-08-11 15:50:21,522 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-11 15:50:21,605 INFO [main] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-08-11 15:50:21,605 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1195 ms
+2019-08-11 15:50:21,643 INFO [main] c.s.i.filter.IncubationFilter [IncubationFilter.java : 29] IncubationFilter init ...
+2019-08-11 15:50:21,784 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-08-11 15:50:21,971 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-08-11 15:50:22,041 INFO [main] o.h.jpa.internal.util.LogHelper [LogHelper.java : 31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-11 15:50:22,106 INFO [main] org.hibernate.Version [Version.java : 46] HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-11 15:50:22,108 INFO [main] org.hibernate.cfg.Environment [Environment.java : 213] HHH000206: hibernate.properties not found
+2019-08-11 15:50:22,231 INFO [main] o.h.annotations.common.Version [JavaReflectionManager.java : 49] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-11 15:50:22,456 INFO [main] org.hibernate.dialect.Dialect [Dialect.java : 157] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-08-11 15:50:23,046 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 15:50:23,550 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 15:50:23,587 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [JpaBaseConfiguration.java : 226] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-11 15:50:23,779 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9090"]
+2019-08-11 15:50:23,837 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9090 (http) with context path '/incubation'
+2019-08-11 15:50:23,840 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 59] Started IncubationApplication in 23.803 seconds (JVM running for 29.556)
+2019-08-11 15:51:58,560 INFO [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-11 15:51:58,561 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-08-11 15:51:58,568 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 6 ms
+2019-08-11 15:51:58,575 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 15:51:58,595 INFO [http-nio-9090-exec-1] c.s.i.controller.IBIndexController [IBIndexController.java : 30] username = [wangjiang], password = [123456]
+2019-08-11 15:51:58,616 INFO [http-nio-9090-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator [QueryTranslatorFactoryInitiator.java : 47] HHH000397: Using ASTQueryTranslatorFactory
+2019-08-11 15:51:58,763 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/user/index, 耗时:188ms
+2019-08-11 15:51:58,764 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 71] ----请求参数:{username=[wangjiang];password=[123456];} ----
+2019-08-11 16:00:17,293 INFO [Thread-50] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:00:17,294 INFO [Thread-50] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:00:17,298 INFO [Thread-50] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] DatebookHikariCP - Shutdown initiated...
+2019-08-11 16:00:17,302 INFO [Thread-50] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] DatebookHikariCP - Shutdown completed.
+2019-08-11 16:00:17,313 INFO [Thread-50] c.s.i.filter.IncubationFilter [IncubationFilter.java : 49] IncubationFilter destroy ...
+2019-08-11 16:01:06,135 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 50] Starting IncubationApplication on MacBook.local with PID 1860 (/Users/john/gitHub-workspace/incubation/target/classes started by john in /Users/john/gitHub-workspace/incubation)
+2019-08-11 16:01:06,138 INFO [main] c.s.incubation.IncubationApplication [SpringApplication.java : 647] No active profile set, falling back to default profiles: default
+2019-08-11 16:01:06,530 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-11 16:01:06,576 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 41ms. Found 1 repository interfaces.
+2019-08-11 16:01:06,829 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4a0c5e3e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 16:01:07,062 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9090 (http)
+2019-08-11 16:01:07,074 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:01:07,081 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-08-11 16:01:07,081 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-11 16:01:07,159 INFO [main] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-08-11 16:01:07,159 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 991 ms
+2019-08-11 16:01:07,192 INFO [main] c.s.i.filter.IncubationFilter [IncubationFilter.java : 29] IncubationFilter init ...
+2019-08-11 16:01:07,279 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-08-11 16:01:07,457 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-08-11 16:01:07,493 INFO [main] o.h.jpa.internal.util.LogHelper [LogHelper.java : 31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-11 16:01:07,548 INFO [main] org.hibernate.Version [Version.java : 46] HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-11 16:01:07,549 INFO [main] org.hibernate.cfg.Environment [Environment.java : 213] HHH000206: hibernate.properties not found
+2019-08-11 16:01:07,653 INFO [main] o.h.annotations.common.Version [JavaReflectionManager.java : 49] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-11 16:01:07,763 INFO [main] org.hibernate.dialect.Dialect [Dialect.java : 157] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-08-11 16:01:08,202 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:01:08,654 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:01:08,689 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [JpaBaseConfiguration.java : 226] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-11 16:01:08,851 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:01:08,890 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9090 (http) with context path '/incubation'
+2019-08-11 16:01:08,894 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 59] Started IncubationApplication in 23.032 seconds (JVM running for 28.628)
+2019-08-11 16:01:47,055 INFO [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-11 16:01:47,056 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-08-11 16:01:47,063 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 7 ms
+2019-08-11 16:01:47,070 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:01:47,090 INFO [http-nio-9090-exec-1] c.s.i.controller.IBIndexController [IBIndexController.java : 30] username = [wangjiang], password = [123456]
+2019-08-11 16:01:47,110 INFO [http-nio-9090-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator [QueryTranslatorFactoryInitiator.java : 47] HHH000397: Using ASTQueryTranslatorFactory
+2019-08-11 16:01:47,258 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/user/index, 耗时:188ms
+2019-08-11 16:01:47,259 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 71] ----请求参数:{username=[wangjiang];password=[123456];} ----
+2019-08-11 16:01:56,796 INFO [Thread-49] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:01:56,797 INFO [Thread-49] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:01:56,800 INFO [Thread-49] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] DatebookHikariCP - Shutdown initiated...
+2019-08-11 16:01:56,805 INFO [Thread-49] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] DatebookHikariCP - Shutdown completed.
+2019-08-11 16:01:56,818 INFO [Thread-49] c.s.i.filter.IncubationFilter [IncubationFilter.java : 49] IncubationFilter destroy ...
+2019-08-11 16:03:02,772 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 50] Starting IncubationApplication on MacBook.local with PID 1876 (/Users/john/gitHub-workspace/incubation/target/classes started by john in /Users/john/gitHub-workspace/incubation)
+2019-08-11 16:03:02,775 INFO [main] c.s.incubation.IncubationApplication [SpringApplication.java : 647] No active profile set, falling back to default profiles: default
+2019-08-11 16:03:03,186 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-11 16:03:03,233 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 41ms. Found 1 repository interfaces.
+2019-08-11 16:03:03,478 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$28eb4a26] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 16:03:03,718 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9090 (http)
+2019-08-11 16:03:03,730 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:03:03,737 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-08-11 16:03:03,738 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-11 16:03:03,807 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-08-11 16:03:03,807 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1002 ms
+2019-08-11 16:03:03,841 INFO [main] c.s.i.filter.IncubationFilter [IncubationFilter.java : 29] IncubationFilter init ...
+2019-08-11 16:03:03,937 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-08-11 16:03:04,131 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-08-11 16:03:04,172 INFO [main] o.h.jpa.internal.util.LogHelper [LogHelper.java : 31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-11 16:03:04,221 INFO [main] org.hibernate.Version [Version.java : 46] HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-11 16:03:04,222 INFO [main] org.hibernate.cfg.Environment [Environment.java : 213] HHH000206: hibernate.properties not found
+2019-08-11 16:03:04,310 INFO [main] o.h.annotations.common.Version [JavaReflectionManager.java : 49] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-11 16:03:04,422 INFO [main] org.hibernate.dialect.Dialect [Dialect.java : 157] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-08-11 16:03:04,841 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:03:05,296 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:03:05,332 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [JpaBaseConfiguration.java : 226] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-11 16:03:05,497 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:03:05,536 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9090 (http) with context path ''
+2019-08-11 16:03:05,539 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 59] Started IncubationApplication in 23.061 seconds (JVM running for 28.775)
+2019-08-11 16:03:16,394 INFO [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-11 16:03:16,395 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-08-11 16:03:16,402 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 7 ms
+2019-08-11 16:03:16,409 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:03:16,417 INFO [http-nio-9090-exec-1] c.s.i.interceptor.LoginInterceptor [LoginInterceptor.java : 27] LoginInterceptor preHandle ...
+2019-08-11 16:03:38,880 INFO [http-nio-9090-exec-1] c.s.i.interceptor.LoginInterceptor [LoginInterceptor.java : 44] LoginInterceptor postHandle ...
+2019-08-11 16:03:38,880 INFO [http-nio-9090-exec-1] c.s.i.interceptor.LoginInterceptor [LoginInterceptor.java : 50] LoginInterceptor afterCompletion ...
+2019-08-11 16:03:38,882 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/user/index, 耗时:22473ms
+2019-08-11 16:03:38,882 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 71] ----请求参数:{username=[wangjiang];password=[123456];} ----
+2019-08-11 16:06:57,462 INFO [Thread-49] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:06:57,463 INFO [Thread-49] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:06:57,467 INFO [Thread-49] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] DatebookHikariCP - Shutdown initiated...
+2019-08-11 16:06:57,472 INFO [Thread-49] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] DatebookHikariCP - Shutdown completed.
+2019-08-11 16:06:57,483 INFO [Thread-49] c.s.i.filter.IncubationFilter [IncubationFilter.java : 49] IncubationFilter destroy ...
+2019-08-11 16:07:41,067 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 50] Starting IncubationApplication on macbook with PID 1944 (/Users/john/gitHub-workspace/incubation/target/classes started by john in /Users/john/gitHub-workspace/incubation)
+2019-08-11 16:07:41,069 INFO [main] c.s.incubation.IncubationApplication [SpringApplication.java : 647] No active profile set, falling back to default profiles: default
+2019-08-11 16:07:41,548 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-11 16:07:41,603 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 49ms. Found 1 repository interfaces.
+2019-08-11 16:07:41,888 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8d91568a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 16:07:42,101 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9090 (http)
+2019-08-11 16:07:42,118 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:07:42,126 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-08-11 16:07:42,127 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-11 16:07:42,228 INFO [main] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-08-11 16:07:42,229 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1135 ms
+2019-08-11 16:07:42,280 INFO [main] c.s.i.filter.IncubationFilter [IncubationFilter.java : 29] IncubationFilter init ...
+2019-08-11 16:07:42,394 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-08-11 16:07:42,569 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-08-11 16:07:42,605 INFO [main] o.h.jpa.internal.util.LogHelper [LogHelper.java : 31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-11 16:07:42,669 INFO [main] org.hibernate.Version [Version.java : 46] HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-11 16:07:42,671 INFO [main] org.hibernate.cfg.Environment [Environment.java : 213] HHH000206: hibernate.properties not found
+2019-08-11 16:07:42,770 INFO [main] o.h.annotations.common.Version [JavaReflectionManager.java : 49] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-11 16:07:43,018 INFO [main] org.hibernate.dialect.Dialect [Dialect.java : 157] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-08-11 16:07:43,683 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:07:44,218 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:07:44,250 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [JpaBaseConfiguration.java : 226] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-11 16:07:44,389 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:07:44,419 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9090 (http) with context path '/incubation'
+2019-08-11 16:07:44,421 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 59] Started IncubationApplication in 3.55 seconds (JVM running for 6.956)
+2019-08-11 16:07:59,079 INFO [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-11 16:07:59,079 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-08-11 16:07:59,085 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 6 ms
+2019-08-11 16:07:59,092 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:07:59,098 INFO [http-nio-9090-exec-1] c.s.i.interceptor.LoginInterceptor [LoginInterceptor.java : 27] LoginInterceptor preHandle ...
+2019-08-11 16:08:04,333 INFO [http-nio-9090-exec-1] c.s.i.controller.IBIndexController [IBIndexController.java : 30] username = [wangjiang], password = [123456]
+2019-08-11 16:08:04,365 INFO [http-nio-9090-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator [QueryTranslatorFactoryInitiator.java : 47] HHH000397: Using ASTQueryTranslatorFactory
+2019-08-11 16:08:04,607 INFO [http-nio-9090-exec-1] c.s.i.interceptor.LoginInterceptor [LoginInterceptor.java : 44] LoginInterceptor postHandle ...
+2019-08-11 16:08:04,608 INFO [http-nio-9090-exec-1] c.s.i.interceptor.LoginInterceptor [LoginInterceptor.java : 50] LoginInterceptor afterCompletion ...
+2019-08-11 16:08:04,609 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/user/index, 耗时:5517ms
+2019-08-11 16:08:04,610 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 71] ----请求参数:{username=[wangjiang];password=[123456];} ----
+2019-08-11 16:08:49,597 INFO [http-nio-9090-exec-4] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:08:49,599 INFO [http-nio-9090-exec-4] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 16:09:51,559 INFO [http-nio-9090-exec-4] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:61962ms
+2019-08-11 16:14:45,336 INFO [Thread-10] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:14:45,337 INFO [Thread-10] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:14:45,342 INFO [Thread-10] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] DatebookHikariCP - Shutdown initiated...
+2019-08-11 16:14:45,348 INFO [Thread-10] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] DatebookHikariCP - Shutdown completed.
+2019-08-11 16:14:45,357 INFO [Thread-10] c.s.i.filter.IncubationFilter [IncubationFilter.java : 49] IncubationFilter destroy ...
+2019-08-11 16:15:29,591 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 50] Starting IncubationApplication on macbook with PID 2003 (/Users/john/gitHub-workspace/incubation/target/classes started by john in /Users/john/gitHub-workspace/incubation)
+2019-08-11 16:15:29,593 INFO [main] c.s.incubation.IncubationApplication [SpringApplication.java : 647] No active profile set, falling back to default profiles: default
+2019-08-11 16:15:30,103 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-11 16:15:30,159 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 50ms. Found 1 repository interfaces.
+2019-08-11 16:15:30,419 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2e301494] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 16:15:30,646 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9090 (http)
+2019-08-11 16:15:30,660 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:15:30,668 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-08-11 16:15:30,668 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-11 16:15:30,771 INFO [main] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-08-11 16:15:30,771 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1153 ms
+2019-08-11 16:15:30,807 INFO [main] c.s.i.filter.IncubationFilter [IncubationFilter.java : 29] IncubationFilter init ...
+2019-08-11 16:15:30,915 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-08-11 16:15:31,108 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-08-11 16:15:31,153 INFO [main] o.h.jpa.internal.util.LogHelper [LogHelper.java : 31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-11 16:15:31,208 INFO [main] org.hibernate.Version [Version.java : 46] HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-11 16:15:31,210 INFO [main] org.hibernate.cfg.Environment [Environment.java : 213] HHH000206: hibernate.properties not found
+2019-08-11 16:15:31,319 INFO [main] o.h.annotations.common.Version [JavaReflectionManager.java : 49] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-11 16:15:31,451 INFO [main] org.hibernate.dialect.Dialect [Dialect.java : 157] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-08-11 16:15:31,926 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:15:32,402 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:15:32,448 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [JpaBaseConfiguration.java : 226] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-11 16:15:32,687 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:15:32,757 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9090 (http) with context path '/incubation'
+2019-08-11 16:15:32,764 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 59] Started IncubationApplication in 3.398 seconds (JVM running for 4.075)
+2019-08-11 16:15:40,106 INFO [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-11 16:15:40,107 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-08-11 16:15:40,113 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 6 ms
+2019-08-11 16:15:40,120 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:15:40,127 INFO [http-nio-9090-exec-1] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 16:15:45,818 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:5698ms
+2019-08-11 16:24:01,210 INFO [Thread-9] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:24:01,211 INFO [Thread-9] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:24:01,213 INFO [Thread-9] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] DatebookHikariCP - Shutdown initiated...
+2019-08-11 16:24:01,217 INFO [Thread-9] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] DatebookHikariCP - Shutdown completed.
+2019-08-11 16:24:01,226 INFO [Thread-9] c.s.i.filter.IncubationFilter [IncubationFilter.java : 49] IncubationFilter destroy ...
+2019-08-11 16:24:14,491 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 50] Starting IncubationApplication on macbook with PID 2058 (/Users/john/gitHub-workspace/incubation/target/classes started by john in /Users/john/gitHub-workspace/incubation)
+2019-08-11 16:24:14,493 INFO [main] c.s.incubation.IncubationApplication [SpringApplication.java : 647] No active profile set, falling back to default profiles: default
+2019-08-11 16:24:15,007 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-11 16:24:15,069 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 53ms. Found 1 repository interfaces.
+2019-08-11 16:24:15,338 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$23db04f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 16:24:15,545 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9090 (http)
+2019-08-11 16:24:15,560 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:24:15,570 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-08-11 16:24:15,570 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-11 16:24:15,669 INFO [main] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-08-11 16:24:15,669 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1152 ms
+2019-08-11 16:24:15,705 INFO [main] c.s.i.filter.IncubationFilter [IncubationFilter.java : 29] IncubationFilter init ...
+2019-08-11 16:24:15,804 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-08-11 16:24:15,982 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-08-11 16:24:16,019 INFO [main] o.h.jpa.internal.util.LogHelper [LogHelper.java : 31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-11 16:24:16,073 INFO [main] org.hibernate.Version [Version.java : 46] HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-11 16:24:16,074 INFO [main] org.hibernate.cfg.Environment [Environment.java : 213] HHH000206: hibernate.properties not found
+2019-08-11 16:24:16,171 INFO [main] o.h.annotations.common.Version [JavaReflectionManager.java : 49] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-11 16:24:16,298 INFO [main] org.hibernate.dialect.Dialect [Dialect.java : 157] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-08-11 16:24:16,763 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:24:17,191 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:24:17,227 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [JpaBaseConfiguration.java : 226] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-11 16:24:17,426 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:24:17,459 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9090 (http) with context path '/incubation'
+2019-08-11 16:24:17,462 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 59] Started IncubationApplication in 3.185 seconds (JVM running for 3.864)
+2019-08-11 16:24:26,046 INFO [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-11 16:24:26,046 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-08-11 16:24:26,052 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 6 ms
+2019-08-11 16:24:26,059 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:24:26,067 INFO [http-nio-9090-exec-1] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 16:24:26,083 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:24ms
+2019-08-11 16:24:28,611 INFO [http-nio-9090-exec-2] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:24:28,612 INFO [http-nio-9090-exec-2] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 16:24:28,613 INFO [http-nio-9090-exec-2] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:2ms
+2019-08-11 16:24:29,865 INFO [http-nio-9090-exec-3] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:24:29,866 INFO [http-nio-9090-exec-3] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 16:24:29,866 INFO [http-nio-9090-exec-3] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:1ms
+2019-08-11 16:26:33,395 INFO [Thread-8] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:26:33,396 INFO [Thread-8] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:26:33,398 INFO [Thread-8] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] DatebookHikariCP - Shutdown initiated...
+2019-08-11 16:26:33,403 INFO [Thread-8] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] DatebookHikariCP - Shutdown completed.
+2019-08-11 16:26:33,413 INFO [Thread-8] c.s.i.filter.IncubationFilter [IncubationFilter.java : 49] IncubationFilter destroy ...
+2019-08-11 16:28:01,857 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 50] Starting IncubationApplication on macbook with PID 2079 (/Users/john/gitHub-workspace/incubation/target/classes started by john in /Users/john/gitHub-workspace/incubation)
+2019-08-11 16:28:01,859 INFO [main] c.s.incubation.IncubationApplication [SpringApplication.java : 647] No active profile set, falling back to default profiles: default
+2019-08-11 16:28:02,297 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-11 16:28:02,355 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 51ms. Found 1 repository interfaces.
+2019-08-11 16:28:02,590 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c30eb587] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 16:28:02,785 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9090 (http)
+2019-08-11 16:28:02,797 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:28:02,805 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-08-11 16:28:02,805 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-11 16:28:02,902 INFO [main] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-08-11 16:28:02,902 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1019 ms
+2019-08-11 16:28:02,935 INFO [main] c.s.i.filter.IncubationFilter [IncubationFilter.java : 29] IncubationFilter init ...
+2019-08-11 16:28:03,022 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-08-11 16:28:03,209 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-08-11 16:28:03,251 INFO [main] o.h.jpa.internal.util.LogHelper [LogHelper.java : 31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-11 16:28:03,302 INFO [main] org.hibernate.Version [Version.java : 46] HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-11 16:28:03,303 INFO [main] org.hibernate.cfg.Environment [Environment.java : 213] HHH000206: hibernate.properties not found
+2019-08-11 16:28:03,402 INFO [main] o.h.annotations.common.Version [JavaReflectionManager.java : 49] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-11 16:28:03,519 INFO [main] org.hibernate.dialect.Dialect [Dialect.java : 157] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-08-11 16:28:03,956 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:28:04,363 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:28:04,394 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [JpaBaseConfiguration.java : 226] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-11 16:28:04,580 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:28:04,618 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9090 (http) with context path '/incubation'
+2019-08-11 16:28:04,621 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 59] Started IncubationApplication in 2.993 seconds (JVM running for 3.993)
+2019-08-11 16:28:10,986 INFO [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-11 16:28:10,986 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-08-11 16:28:10,991 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 5 ms
+2019-08-11 16:28:10,998 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:28:11,005 INFO [http-nio-9090-exec-1] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 16:28:11,020 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:22ms
+2019-08-11 16:28:12,590 INFO [http-nio-9090-exec-2] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:28:12,591 INFO [http-nio-9090-exec-2] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 16:28:12,592 INFO [http-nio-9090-exec-2] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:1ms
+2019-08-11 16:32:41,775 INFO [Thread-9] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:32:41,775 INFO [Thread-9] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:32:41,778 INFO [Thread-9] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] DatebookHikariCP - Shutdown initiated...
+2019-08-11 16:32:41,782 INFO [Thread-9] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] DatebookHikariCP - Shutdown completed.
+2019-08-11 16:32:41,791 INFO [Thread-9] c.s.i.filter.IncubationFilter [IncubationFilter.java : 49] IncubationFilter destroy ...
+2019-08-11 16:33:34,569 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 50] Starting IncubationApplication on macbook with PID 2116 (/Users/john/gitHub-workspace/incubation/target/classes started by john in /Users/john/gitHub-workspace/incubation)
+2019-08-11 16:33:34,571 INFO [main] c.s.incubation.IncubationApplication [SpringApplication.java : 647] No active profile set, falling back to default profiles: default
+2019-08-11 16:33:35,061 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-11 16:33:35,117 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 51ms. Found 1 repository interfaces.
+2019-08-11 16:33:35,415 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$69865b08] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 16:33:35,613 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9090 (http)
+2019-08-11 16:33:35,625 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:33:35,636 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-08-11 16:33:35,637 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-11 16:33:35,739 INFO [main] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-08-11 16:33:35,739 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1144 ms
+2019-08-11 16:33:35,777 INFO [main] c.s.i.filter.IncubationFilter [IncubationFilter.java : 29] IncubationFilter init ...
+2019-08-11 16:33:35,907 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-08-11 16:33:36,083 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-08-11 16:33:36,120 INFO [main] o.h.jpa.internal.util.LogHelper [LogHelper.java : 31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-11 16:33:36,176 INFO [main] org.hibernate.Version [Version.java : 46] HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-11 16:33:36,177 INFO [main] org.hibernate.cfg.Environment [Environment.java : 213] HHH000206: hibernate.properties not found
+2019-08-11 16:33:36,266 INFO [main] o.h.annotations.common.Version [JavaReflectionManager.java : 49] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-11 16:33:36,367 INFO [main] org.hibernate.dialect.Dialect [Dialect.java : 157] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-08-11 16:33:36,818 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:33:37,246 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:33:37,277 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [JpaBaseConfiguration.java : 226] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-11 16:33:37,446 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:33:37,483 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9090 (http) with context path '/incubation'
+2019-08-11 16:33:37,487 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 59] Started IncubationApplication in 3.131 seconds (JVM running for 3.862)
+2019-08-11 16:34:46,537 INFO [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-11 16:34:46,537 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-08-11 16:34:46,543 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 6 ms
+2019-08-11 16:34:46,550 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:34:46,557 INFO [http-nio-9090-exec-1] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 16:34:46,568 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:18ms
+2019-08-11 16:34:49,439 INFO [http-nio-9090-exec-2] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:34:49,440 INFO [http-nio-9090-exec-2] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 16:34:49,442 INFO [http-nio-9090-exec-2] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:3ms
+2019-08-11 16:36:33,844 INFO [Thread-9] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:36:33,845 INFO [Thread-9] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:36:33,848 INFO [Thread-9] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] DatebookHikariCP - Shutdown initiated...
+2019-08-11 16:36:33,852 INFO [Thread-9] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] DatebookHikariCP - Shutdown completed.
+2019-08-11 16:36:33,860 INFO [Thread-9] c.s.i.filter.IncubationFilter [IncubationFilter.java : 49] IncubationFilter destroy ...
+2019-08-11 16:41:15,692 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 50] Starting IncubationApplication on macbook with PID 2149 (/Users/john/gitHub-workspace/incubation/target/classes started by john in /Users/john/gitHub-workspace/incubation)
+2019-08-11 16:41:15,695 INFO [main] c.s.incubation.IncubationApplication [SpringApplication.java : 647] No active profile set, falling back to default profiles: default
+2019-08-11 16:41:16,193 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-11 16:41:16,248 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 50ms. Found 1 repository interfaces.
+2019-08-11 16:41:16,533 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$956be250] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 16:41:16,745 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9090 (http)
+2019-08-11 16:41:16,760 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:41:16,769 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-08-11 16:41:16,770 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-11 16:41:16,872 INFO [main] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-08-11 16:41:16,873 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1148 ms
+2019-08-11 16:41:16,908 INFO [main] c.s.i.filter.IncubationFilter [IncubationFilter.java : 29] IncubationFilter init ...
+2019-08-11 16:41:17,010 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-08-11 16:41:17,194 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-08-11 16:41:17,231 INFO [main] o.h.jpa.internal.util.LogHelper [LogHelper.java : 31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-11 16:41:17,286 INFO [main] org.hibernate.Version [Version.java : 46] HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-11 16:41:17,287 INFO [main] org.hibernate.cfg.Environment [Environment.java : 213] HHH000206: hibernate.properties not found
+2019-08-11 16:41:17,398 INFO [main] o.h.annotations.common.Version [JavaReflectionManager.java : 49] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-11 16:41:17,518 INFO [main] org.hibernate.dialect.Dialect [Dialect.java : 157] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-08-11 16:41:17,986 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:41:18,465 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:41:18,500 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [JpaBaseConfiguration.java : 226] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-11 16:41:18,675 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:41:18,713 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9090 (http) with context path '/incubation'
+2019-08-11 16:41:18,716 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 59] Started IncubationApplication in 3.285 seconds (JVM running for 4.073)
+2019-08-11 16:41:26,355 INFO [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-11 16:41:26,355 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-08-11 16:41:26,361 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 5 ms
+2019-08-11 16:41:26,368 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:41:26,375 INFO [http-nio-9090-exec-1] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 16:41:26,385 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:17ms
+2019-08-11 16:41:28,430 INFO [http-nio-9090-exec-2] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:41:28,431 INFO [http-nio-9090-exec-2] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 16:41:28,433 INFO [http-nio-9090-exec-2] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:2ms
+2019-08-11 16:41:41,823 INFO [http-nio-9090-exec-4] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:41:41,824 INFO [http-nio-9090-exec-4] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 16:41:41,825 INFO [http-nio-9090-exec-4] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:2ms
+2019-08-11 16:49:56,240 INFO [Thread-9] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:49:56,241 INFO [Thread-9] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:49:56,244 INFO [Thread-9] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] DatebookHikariCP - Shutdown initiated...
+2019-08-11 16:49:56,247 INFO [Thread-9] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] DatebookHikariCP - Shutdown completed.
+2019-08-11 16:49:56,257 INFO [Thread-9] c.s.i.filter.IncubationFilter [IncubationFilter.java : 49] IncubationFilter destroy ...
+2019-08-11 16:50:09,428 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 50] Starting IncubationApplication on macbook with PID 2180 (/Users/john/gitHub-workspace/incubation/target/classes started by john in /Users/john/gitHub-workspace/incubation)
+2019-08-11 16:50:09,431 INFO [main] c.s.incubation.IncubationApplication [SpringApplication.java : 647] No active profile set, falling back to default profiles: default
+2019-08-11 16:50:09,886 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-11 16:50:09,941 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 49ms. Found 1 repository interfaces.
+2019-08-11 16:50:10,194 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$afebda8a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 16:50:10,393 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9090 (http)
+2019-08-11 16:50:10,405 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:50:10,414 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-08-11 16:50:10,414 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-11 16:50:10,510 INFO [main] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-08-11 16:50:10,510 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1055 ms
+2019-08-11 16:50:10,542 INFO [main] c.s.i.filter.IncubationFilter [IncubationFilter.java : 29] IncubationFilter init ...
+2019-08-11 16:50:10,640 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-08-11 16:50:10,836 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-08-11 16:50:10,880 INFO [main] o.h.jpa.internal.util.LogHelper [LogHelper.java : 31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-11 16:50:10,928 INFO [main] org.hibernate.Version [Version.java : 46] HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-11 16:50:10,929 INFO [main] org.hibernate.cfg.Environment [Environment.java : 213] HHH000206: hibernate.properties not found
+2019-08-11 16:50:11,018 INFO [main] o.h.annotations.common.Version [JavaReflectionManager.java : 49] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-11 16:50:11,114 INFO [main] org.hibernate.dialect.Dialect [Dialect.java : 157] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-08-11 16:50:11,566 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:50:11,994 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:50:12,026 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [JpaBaseConfiguration.java : 226] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-11 16:50:12,194 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:50:12,235 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9090 (http) with context path '/incubation'
+2019-08-11 16:50:12,239 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 59] Started IncubationApplication in 3.02 seconds (JVM running for 3.636)
+2019-08-11 16:50:35,721 INFO [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-11 16:50:35,721 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-08-11 16:50:35,727 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 6 ms
+2019-08-11 16:50:35,733 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:50:35,741 INFO [http-nio-9090-exec-1] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 16:50:35,751 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:17ms
+2019-08-11 16:50:37,586 INFO [http-nio-9090-exec-2] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:50:37,587 INFO [http-nio-9090-exec-2] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 16:50:37,589 INFO [http-nio-9090-exec-2] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:2ms
+2019-08-11 16:50:38,156 INFO [http-nio-9090-exec-3] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:50:38,157 INFO [http-nio-9090-exec-3] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 16:50:38,158 INFO [http-nio-9090-exec-3] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:2ms
+2019-08-11 16:50:38,343 INFO [http-nio-9090-exec-4] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:50:38,344 INFO [http-nio-9090-exec-4] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 16:50:38,345 INFO [http-nio-9090-exec-4] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:2ms
+2019-08-11 16:50:38,508 INFO [http-nio-9090-exec-5] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:50:38,509 INFO [http-nio-9090-exec-5] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 16:50:38,510 INFO [http-nio-9090-exec-5] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:1ms
+2019-08-11 16:53:05,093 INFO [http-nio-9090-exec-8] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:53:05,094 INFO [http-nio-9090-exec-8] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 16:53:05,095 INFO [http-nio-9090-exec-8] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:2ms
+2019-08-11 16:53:51,584 INFO [Thread-8] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:53:51,585 INFO [Thread-8] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:53:51,587 INFO [Thread-8] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] DatebookHikariCP - Shutdown initiated...
+2019-08-11 16:53:51,591 INFO [Thread-8] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] DatebookHikariCP - Shutdown completed.
+2019-08-11 16:53:51,602 INFO [Thread-8] c.s.i.filter.IncubationFilter [IncubationFilter.java : 49] IncubationFilter destroy ...
+2019-08-11 16:54:11,832 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 50] Starting IncubationApplication on macbook with PID 2202 (/Users/john/gitHub-workspace/incubation/target/classes started by john in /Users/john/gitHub-workspace/incubation)
+2019-08-11 16:54:11,834 INFO [main] c.s.incubation.IncubationApplication [SpringApplication.java : 647] No active profile set, falling back to default profiles: default
+2019-08-11 16:54:12,277 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-11 16:54:12,339 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 55ms. Found 1 repository interfaces.
+2019-08-11 16:54:12,592 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fe0d65e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 16:54:12,782 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9090 (http)
+2019-08-11 16:54:12,793 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:54:12,802 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-08-11 16:54:12,803 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-11 16:54:12,914 INFO [main] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-08-11 16:54:12,914 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1056 ms
+2019-08-11 16:54:12,949 INFO [main] c.s.i.filter.IncubationFilter [IncubationFilter.java : 29] IncubationFilter init ...
+2019-08-11 16:54:13,054 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-08-11 16:54:13,228 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-08-11 16:54:13,262 INFO [main] o.h.jpa.internal.util.LogHelper [LogHelper.java : 31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-11 16:54:13,325 INFO [main] org.hibernate.Version [Version.java : 46] HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-11 16:54:13,326 INFO [main] org.hibernate.cfg.Environment [Environment.java : 213] HHH000206: hibernate.properties not found
+2019-08-11 16:54:13,423 INFO [main] o.h.annotations.common.Version [JavaReflectionManager.java : 49] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-11 16:54:13,535 INFO [main] org.hibernate.dialect.Dialect [Dialect.java : 157] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-08-11 16:54:13,960 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:54:14,393 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:54:14,424 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [JpaBaseConfiguration.java : 226] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-11 16:54:14,591 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:54:14,627 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9090 (http) with context path '/incubation'
+2019-08-11 16:54:14,630 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 59] Started IncubationApplication in 3.057 seconds (JVM running for 3.982)
+2019-08-11 16:54:29,710 INFO [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-11 16:54:29,710 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-08-11 16:54:29,715 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 5 ms
+2019-08-11 16:54:29,722 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 16:54:29,730 INFO [http-nio-9090-exec-1] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 16:54:29,741 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:19ms
+2019-08-11 16:57:01,247 INFO [Thread-9] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:57:01,248 INFO [Thread-9] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:57:01,251 INFO [Thread-9] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] DatebookHikariCP - Shutdown initiated...
+2019-08-11 16:57:01,255 INFO [Thread-9] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] DatebookHikariCP - Shutdown completed.
+2019-08-11 16:57:01,264 INFO [Thread-9] c.s.i.filter.IncubationFilter [IncubationFilter.java : 49] IncubationFilter destroy ...
+2019-08-11 16:57:15,672 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 50] Starting IncubationApplication on macbook with PID 2227 (/Users/john/gitHub-workspace/incubation/target/classes started by john in /Users/john/gitHub-workspace/incubation)
+2019-08-11 16:57:15,675 INFO [main] c.s.incubation.IncubationApplication [SpringApplication.java : 647] No active profile set, falling back to default profiles: default
+2019-08-11 16:57:16,115 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-11 16:57:16,177 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 55ms. Found 1 repository interfaces.
+2019-08-11 16:57:16,432 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4a0c5e3e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 16:57:16,623 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9090 (http)
+2019-08-11 16:57:16,638 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:57:16,648 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-08-11 16:57:16,648 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-11 16:57:16,746 INFO [main] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-08-11 16:57:16,747 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1043 ms
+2019-08-11 16:57:16,780 INFO [main] c.s.i.filter.IncubationFilter [IncubationFilter.java : 29] IncubationFilter init ...
+2019-08-11 16:57:16,876 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-08-11 16:57:17,057 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-08-11 16:57:17,092 INFO [main] o.h.jpa.internal.util.LogHelper [LogHelper.java : 31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-11 16:57:17,153 INFO [main] org.hibernate.Version [Version.java : 46] HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-11 16:57:17,154 INFO [main] org.hibernate.cfg.Environment [Environment.java : 213] HHH000206: hibernate.properties not found
+2019-08-11 16:57:17,247 INFO [main] o.h.annotations.common.Version [JavaReflectionManager.java : 49] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-11 16:57:17,355 INFO [main] org.hibernate.dialect.Dialect [Dialect.java : 157] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-08-11 16:57:17,784 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:57:18,204 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:57:18,235 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [JpaBaseConfiguration.java : 226] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-11 16:57:18,404 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9090"]
+2019-08-11 16:57:18,440 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9090 (http) with context path '/incubation'
+2019-08-11 16:57:18,442 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 59] Started IncubationApplication in 3.021 seconds (JVM running for 3.792)
+2019-08-11 16:58:32,187 INFO [Thread-8] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:58:32,187 INFO [Thread-8] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 16:58:32,191 INFO [Thread-8] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] DatebookHikariCP - Shutdown initiated...
+2019-08-11 16:58:32,196 INFO [Thread-8] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] DatebookHikariCP - Shutdown completed.
+2019-08-11 16:58:32,204 INFO [Thread-8] c.s.i.filter.IncubationFilter [IncubationFilter.java : 49] IncubationFilter destroy ...
+2019-08-11 17:31:01,479 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 50] Starting IncubationApplication on macbook with PID 2347 (/Users/john/gitHub-workspace/incubation/target/classes started by john in /Users/john/gitHub-workspace/incubation)
+2019-08-11 17:31:01,481 INFO [main] c.s.incubation.IncubationApplication [SpringApplication.java : 647] No active profile set, falling back to default profiles: default
+2019-08-11 17:31:01,943 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-11 17:31:02,002 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 52ms. Found 1 repository interfaces.
+2019-08-11 17:31:02,276 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5fe9e0d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 17:31:02,485 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9090 (http)
+2019-08-11 17:31:02,499 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9090"]
+2019-08-11 17:31:02,509 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-08-11 17:31:02,509 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-11 17:31:02,610 INFO [main] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-08-11 17:31:02,611 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1106 ms
+2019-08-11 17:31:02,645 INFO [main] c.s.i.filter.IncubationFilter [IncubationFilter.java : 29] IncubationFilter init ...
+2019-08-11 17:31:02,746 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-08-11 17:31:02,928 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-08-11 17:31:02,964 INFO [main] o.h.jpa.internal.util.LogHelper [LogHelper.java : 31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-11 17:31:03,018 INFO [main] org.hibernate.Version [Version.java : 46] HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-11 17:31:03,019 INFO [main] org.hibernate.cfg.Environment [Environment.java : 213] HHH000206: hibernate.properties not found
+2019-08-11 17:31:03,126 INFO [main] o.h.annotations.common.Version [JavaReflectionManager.java : 49] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-11 17:31:03,243 INFO [main] org.hibernate.dialect.Dialect [Dialect.java : 157] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-08-11 17:31:03,709 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 17:31:04,143 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 17:31:04,174 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [JpaBaseConfiguration.java : 226] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-11 17:31:04,346 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9090"]
+2019-08-11 17:31:04,384 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9090 (http) with context path '/incubation'
+2019-08-11 17:31:04,387 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 59] Started IncubationApplication in 3.115 seconds (JVM running for 3.721)
+2019-08-11 17:31:16,082 INFO [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-11 17:31:16,082 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-08-11 17:31:16,088 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 6 ms
+2019-08-11 17:31:16,095 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 17:31:16,102 INFO [http-nio-9090-exec-1] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 17:31:16,113 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:18ms
+2019-08-11 17:32:10,978 INFO [http-nio-9090-exec-3] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 17:32:10,980 INFO [http-nio-9090-exec-3] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 17:32:10,981 INFO [http-nio-9090-exec-3] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:2ms
+2019-08-11 17:32:10,982 INFO [http-nio-9090-exec-3] c.s.i.filter.IncubationFilter [IncubationFilter.java : 71] ----请求参数:{token=[1];} ----
+2019-08-11 17:32:27,052 INFO [http-nio-9090-exec-5] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 17:32:27,053 INFO [http-nio-9090-exec-5] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 17:32:27,172 INFO [http-nio-9090-exec-5] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 51] ApiInterceptor postHandle ...
+2019-08-11 17:32:27,173 INFO [http-nio-9090-exec-5] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 57] ApiInterceptor afterCompletion ...
+2019-08-11 17:32:27,173 INFO [http-nio-9090-exec-5] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:121ms
+2019-08-11 17:32:27,174 INFO [http-nio-9090-exec-5] c.s.i.filter.IncubationFilter [IncubationFilter.java : 71] ----请求参数:{token=[incubation];} ----
+2019-08-11 17:32:47,755 INFO [http-nio-9090-exec-7] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 17:32:47,756 INFO [http-nio-9090-exec-7] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 17:32:47,760 INFO [http-nio-9090-exec-7] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 51] ApiInterceptor postHandle ...
+2019-08-11 17:32:47,761 INFO [http-nio-9090-exec-7] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 57] ApiInterceptor afterCompletion ...
+2019-08-11 17:32:47,761 INFO [http-nio-9090-exec-7] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/1, 耗时:6ms
+2019-08-11 17:32:47,761 INFO [http-nio-9090-exec-7] c.s.i.filter.IncubationFilter [IncubationFilter.java : 71] ----请求参数:{token=[incubation];} ----
+2019-08-11 17:33:27,964 INFO [http-nio-9090-exec-9] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 17:33:27,965 INFO [http-nio-9090-exec-9] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 17:33:27,989 INFO [http-nio-9090-exec-9] c.s.i.e.IBGlobalExceptionHandler [IBGlobalExceptionHandler.java : 36] ----请求异常:/incubation/api/user/list, 信息：Could not locate named parameter [username], expecting one of []; nested exception is java.lang.IllegalArgumentException: Could not locate named parameter [username], expecting one of [] ----
+2019-08-11 17:33:27,991 ERROR [http-nio-9090-exec-9] c.s.i.e.IBGlobalExceptionHandler [IBGlobalExceptionHandler.java : 37] 异常信息:
+org.springframework.dao.InvalidDataAccessApiUsageException: Could not locate named parameter [username], expecting one of []; nested exception is java.lang.IllegalArgumentException: Could not locate named parameter [username], expecting one of []
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:373)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:255)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:527)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:153)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at cc.saxfore.incubation.repository.IBUserNativeRepository$$EnhancerBySpringCGLIB$$cff4fd46.queryUserList(<generated>)
+	at cc.saxfore.incubation.service.impl.IBUserServiceImpl.findUserList(IBUserServiceImpl.java:90)
+	at cc.saxfore.incubation.controller.IBApiUserController.list(IBApiUserController.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at cc.saxfore.incubation.filter.IncubationFilter.doFilter(IncubationFilter.java:41)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Could not locate named parameter [username], expecting one of []
+	at org.hibernate.query.internal.ParameterMetadataImpl.getNamedParameterDescriptor(ParameterMetadataImpl.java:218)
+	at org.hibernate.query.internal.ParameterMetadataImpl.getQueryParameter(ParameterMetadataImpl.java:187)
+	at org.hibernate.query.internal.QueryParameterBindingsImpl.getBinding(QueryParameterBindingsImpl.java:188)
+	at org.hibernate.query.internal.AbstractProducedQuery.setParameter(AbstractProducedQuery.java:493)
+	at org.hibernate.query.internal.NativeQueryImpl.setParameter(NativeQueryImpl.java:604)
+	at org.hibernate.query.internal.NativeQueryImpl.setParameter(NativeQueryImpl.java:59)
+	at cc.saxfore.incubation.repository.IBUserNativeRepository.queryUserList(IBUserNativeRepository.java:34)
+	at cc.saxfore.incubation.repository.IBUserNativeRepository$$FastClassBySpringCGLIB$$10de0e9b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	... 62 common frames omitted
+2019-08-11 17:33:27,994 INFO [http-nio-9090-exec-9] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 57] ApiInterceptor afterCompletion ...
+2019-08-11 17:33:27,994 INFO [http-nio-9090-exec-9] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/list, 耗时:29ms
+2019-08-11 17:33:27,995 INFO [http-nio-9090-exec-9] c.s.i.filter.IncubationFilter [IncubationFilter.java : 71] ----请求参数:{token=[incubation];} ----
+2019-08-11 17:34:09,889 INFO [Thread-8] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 17:34:09,890 INFO [Thread-8] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 17:34:09,893 INFO [Thread-8] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] DatebookHikariCP - Shutdown initiated...
+2019-08-11 17:34:09,897 INFO [Thread-8] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] DatebookHikariCP - Shutdown completed.
+2019-08-11 17:34:09,907 INFO [Thread-8] c.s.i.filter.IncubationFilter [IncubationFilter.java : 49] IncubationFilter destroy ...
+2019-08-11 17:35:40,986 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 50] Starting IncubationApplication on macbook with PID 2373 (/Users/john/gitHub-workspace/incubation/target/classes started by john in /Users/john/gitHub-workspace/incubation)
+2019-08-11 17:35:40,988 INFO [main] c.s.incubation.IncubationApplication [SpringApplication.java : 647] No active profile set, falling back to default profiles: default
+2019-08-11 17:35:41,753 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-11 17:35:41,813 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 53ms. Found 1 repository interfaces.
+2019-08-11 17:35:42,093 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d6a160a3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 17:35:42,370 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9090 (http)
+2019-08-11 17:35:42,380 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9090"]
+2019-08-11 17:35:42,388 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-08-11 17:35:42,388 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-11 17:35:42,484 INFO [main] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-08-11 17:35:42,485 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1472 ms
+2019-08-11 17:35:42,518 INFO [main] c.s.i.filter.IncubationFilter [IncubationFilter.java : 29] IncubationFilter init ...
+2019-08-11 17:35:42,627 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-08-11 17:35:42,819 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-08-11 17:35:42,863 INFO [main] o.h.jpa.internal.util.LogHelper [LogHelper.java : 31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-11 17:35:42,917 INFO [main] org.hibernate.Version [Version.java : 46] HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-11 17:35:42,918 INFO [main] org.hibernate.cfg.Environment [Environment.java : 213] HHH000206: hibernate.properties not found
+2019-08-11 17:35:43,022 INFO [main] o.h.annotations.common.Version [JavaReflectionManager.java : 49] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-11 17:35:43,147 INFO [main] org.hibernate.dialect.Dialect [Dialect.java : 157] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-08-11 17:35:43,850 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 17:35:44,334 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 17:35:44,366 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [JpaBaseConfiguration.java : 226] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-11 17:35:44,544 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9090"]
+2019-08-11 17:35:44,583 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9090 (http) with context path '/incubation'
+2019-08-11 17:35:44,585 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 59] Started IncubationApplication in 3.812 seconds (JVM running for 4.873)
+2019-08-11 17:35:51,355 INFO [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-11 17:35:51,355 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-08-11 17:35:51,362 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 6 ms
+2019-08-11 17:35:51,368 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 17:35:51,375 INFO [http-nio-9090-exec-1] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 17:35:51,440 WARN [http-nio-9090-exec-1] o.h.e.jdbc.spi.SqlExceptionHelper [SqlExceptionHelper.java : 137] SQL Error: 1146, SQLState: 42S02
+2019-08-11 17:35:51,441 ERROR [http-nio-9090-exec-1] o.h.e.jdbc.spi.SqlExceptionHelper [SqlExceptionHelper.java : 142] Table 'incubation.ibuser' doesn't exist
+2019-08-11 17:35:51,450 INFO [http-nio-9090-exec-1] c.s.i.e.IBGlobalExceptionHandler [IBGlobalExceptionHandler.java : 36] ----请求异常:/incubation/api/user/list, 信息：could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet ----
+2019-08-11 17:35:51,452 ERROR [http-nio-9090-exec-1] c.s.i.e.IBGlobalExceptionHandler [IBGlobalExceptionHandler.java : 37] 异常信息:
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:279)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:253)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:527)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:153)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at cc.saxfore.incubation.repository.IBUserNativeRepository$$EnhancerBySpringCGLIB$$c47b6203.queryUserList(<generated>)
+	at cc.saxfore.incubation.service.impl.IBUserServiceImpl.findUserList(IBUserServiceImpl.java:90)
+	at cc.saxfore.incubation.controller.IBApiUserController.list(IBApiUserController.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at cc.saxfore.incubation.filter.IncubationFilter.doFilter(IncubationFilter.java:41)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:69)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:2167)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1930)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1892)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:937)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:340)
+	at org.hibernate.loader.Loader.doList(Loader.java:2689)
+	at org.hibernate.loader.Loader.doList(Loader.java:2672)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2506)
+	at org.hibernate.loader.Loader.list(Loader.java:2501)
+	at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:338)
+	at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:2223)
+	at org.hibernate.internal.AbstractSharedSessionContract.list(AbstractSharedSessionContract.java:1069)
+	at org.hibernate.query.internal.NativeQueryImpl.doList(NativeQueryImpl.java:170)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1505)
+	at org.hibernate.query.Query.getResultList(Query.java:132)
+	at cc.saxfore.incubation.repository.IBUserNativeRepository.queryUserList(IBUserNativeRepository.java:35)
+	at cc.saxfore.incubation.repository.IBUserNativeRepository$$FastClassBySpringCGLIB$$10de0e9b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	... 62 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Table 'incubation.ibuser' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:60)
+	... 83 common frames omitted
+2019-08-11 17:35:51,504 INFO [http-nio-9090-exec-1] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 57] ApiInterceptor afterCompletion ...
+2019-08-11 17:35:51,505 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/list, 耗时:136ms
+2019-08-11 17:35:51,506 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 71] ----请求参数:{token=[incubation];} ----
+2019-08-11 17:36:37,976 INFO [Thread-10] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 17:36:37,976 INFO [Thread-10] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 17:36:37,979 INFO [Thread-10] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] DatebookHikariCP - Shutdown initiated...
+2019-08-11 17:36:37,983 INFO [Thread-10] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] DatebookHikariCP - Shutdown completed.
+2019-08-11 17:36:37,992 INFO [Thread-10] c.s.i.filter.IncubationFilter [IncubationFilter.java : 49] IncubationFilter destroy ...
+2019-08-11 17:36:43,134 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 50] Starting IncubationApplication on macbook with PID 2384 (/Users/john/gitHub-workspace/incubation/target/classes started by john in /Users/john/gitHub-workspace/incubation)
+2019-08-11 17:36:43,137 INFO [main] c.s.incubation.IncubationApplication [SpringApplication.java : 647] No active profile set, falling back to default profiles: default
+2019-08-11 17:36:43,670 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-11 17:36:43,728 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 52ms. Found 1 repository interfaces.
+2019-08-11 17:36:44,015 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$161c708c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 17:36:44,229 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9090 (http)
+2019-08-11 17:36:44,246 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9090"]
+2019-08-11 17:36:44,254 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-08-11 17:36:44,254 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-11 17:36:44,348 INFO [main] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-08-11 17:36:44,348 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1179 ms
+2019-08-11 17:36:44,390 INFO [main] c.s.i.filter.IncubationFilter [IncubationFilter.java : 29] IncubationFilter init ...
+2019-08-11 17:36:44,500 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-08-11 17:36:44,679 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-08-11 17:36:44,717 INFO [main] o.h.jpa.internal.util.LogHelper [LogHelper.java : 31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-11 17:36:44,773 INFO [main] org.hibernate.Version [Version.java : 46] HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-11 17:36:44,775 INFO [main] org.hibernate.cfg.Environment [Environment.java : 213] HHH000206: hibernate.properties not found
+2019-08-11 17:36:44,884 INFO [main] o.h.annotations.common.Version [JavaReflectionManager.java : 49] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-11 17:36:45,022 INFO [main] org.hibernate.dialect.Dialect [Dialect.java : 157] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-08-11 17:36:45,511 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 17:36:45,933 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 17:36:45,966 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [JpaBaseConfiguration.java : 226] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-11 17:36:46,147 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9090"]
+2019-08-11 17:36:46,184 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9090 (http) with context path '/incubation'
+2019-08-11 17:36:46,186 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 59] Started IncubationApplication in 3.345 seconds (JVM running for 4.018)
+2019-08-11 17:36:51,276 INFO [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-11 17:36:51,277 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-08-11 17:36:51,282 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 5 ms
+2019-08-11 17:36:51,290 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 17:36:51,296 INFO [http-nio-9090-exec-1] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 17:36:51,385 INFO [http-nio-9090-exec-1] c.s.i.e.IBGlobalExceptionHandler [IBGlobalExceptionHandler.java : 36] ----请求异常:/incubation/api/user/list, 信息：Could not resolve PropertyAccess for del_flag on class cc.saxfore.incubation.entity.IBUser; nested exception is org.hibernate.PropertyNotFoundException: Could not resolve PropertyAccess for del_flag on class cc.saxfore.incubation.entity.IBUser ----
+2019-08-11 17:36:51,387 ERROR [http-nio-9090-exec-1] c.s.i.e.IBGlobalExceptionHandler [IBGlobalExceptionHandler.java : 37] 异常信息:
+org.springframework.orm.jpa.JpaSystemException: Could not resolve PropertyAccess for del_flag on class cc.saxfore.incubation.entity.IBUser; nested exception is org.hibernate.PropertyNotFoundException: Could not resolve PropertyAccess for del_flag on class cc.saxfore.incubation.entity.IBUser
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:351)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:253)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:527)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:153)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at cc.saxfore.incubation.repository.IBUserNativeRepository$$EnhancerBySpringCGLIB$$317413d1.queryUserList(<generated>)
+	at cc.saxfore.incubation.service.impl.IBUserServiceImpl.findUserList(IBUserServiceImpl.java:90)
+	at cc.saxfore.incubation.controller.IBApiUserController.list(IBApiUserController.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at cc.saxfore.incubation.filter.IncubationFilter.doFilter(IncubationFilter.java:41)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.hibernate.PropertyNotFoundException: Could not resolve PropertyAccess for del_flag on class cc.saxfore.incubation.entity.IBUser
+	at org.hibernate.property.access.internal.PropertyAccessStrategyChainedImpl.buildPropertyAccess(PropertyAccessStrategyChainedImpl.java:35)
+	at org.hibernate.transform.AliasToBeanResultTransformer.initialize(AliasToBeanResultTransformer.java:104)
+	at org.hibernate.transform.AliasToBeanResultTransformer.transformTuple(AliasToBeanResultTransformer.java:68)
+	at org.hibernate.hql.internal.HolderInstantiator.instantiate(HolderInstantiator.java:85)
+	at org.hibernate.loader.custom.CustomLoader.getResultList(CustomLoader.java:433)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2506)
+	at org.hibernate.loader.Loader.list(Loader.java:2501)
+	at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:338)
+	at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:2223)
+	at org.hibernate.internal.AbstractSharedSessionContract.list(AbstractSharedSessionContract.java:1069)
+	at org.hibernate.query.internal.NativeQueryImpl.doList(NativeQueryImpl.java:170)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1505)
+	at org.hibernate.query.Query.getResultList(Query.java:132)
+	at cc.saxfore.incubation.repository.IBUserNativeRepository.queryUserList(IBUserNativeRepository.java:35)
+	at cc.saxfore.incubation.repository.IBUserNativeRepository$$FastClassBySpringCGLIB$$10de0e9b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	... 62 common frames omitted
+2019-08-11 17:36:51,437 INFO [http-nio-9090-exec-1] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 57] ApiInterceptor afterCompletion ...
+2019-08-11 17:36:51,438 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/list, 耗时:148ms
+2019-08-11 17:36:51,439 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 71] ----请求参数:{token=[incubation];} ----
+2019-08-11 17:37:35,410 INFO [http-nio-9090-exec-3] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 17:37:35,410 INFO [http-nio-9090-exec-3] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 17:37:45,475 INFO [http-nio-9090-exec-3] c.s.i.e.IBGlobalExceptionHandler [IBGlobalExceptionHandler.java : 36] ----请求异常:/incubation/api/user/list, 信息：Could not resolve PropertyAccess for del_flag on class cc.saxfore.incubation.entity.IBUser; nested exception is org.hibernate.PropertyNotFoundException: Could not resolve PropertyAccess for del_flag on class cc.saxfore.incubation.entity.IBUser ----
+2019-08-11 17:37:45,477 ERROR [http-nio-9090-exec-3] c.s.i.e.IBGlobalExceptionHandler [IBGlobalExceptionHandler.java : 37] 异常信息:
+org.springframework.orm.jpa.JpaSystemException: Could not resolve PropertyAccess for del_flag on class cc.saxfore.incubation.entity.IBUser; nested exception is org.hibernate.PropertyNotFoundException: Could not resolve PropertyAccess for del_flag on class cc.saxfore.incubation.entity.IBUser
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:351)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:253)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:527)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:153)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at cc.saxfore.incubation.repository.IBUserNativeRepository$$EnhancerBySpringCGLIB$$317413d1.queryUserList(<generated>)
+	at cc.saxfore.incubation.service.impl.IBUserServiceImpl.findUserList(IBUserServiceImpl.java:90)
+	at cc.saxfore.incubation.controller.IBApiUserController.list(IBApiUserController.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at cc.saxfore.incubation.filter.IncubationFilter.doFilter(IncubationFilter.java:41)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.hibernate.PropertyNotFoundException: Could not resolve PropertyAccess for del_flag on class cc.saxfore.incubation.entity.IBUser
+	at org.hibernate.property.access.internal.PropertyAccessStrategyChainedImpl.buildPropertyAccess(PropertyAccessStrategyChainedImpl.java:35)
+	at org.hibernate.transform.AliasToBeanResultTransformer.initialize(AliasToBeanResultTransformer.java:104)
+	at org.hibernate.transform.AliasToBeanResultTransformer.transformTuple(AliasToBeanResultTransformer.java:68)
+	at org.hibernate.hql.internal.HolderInstantiator.instantiate(HolderInstantiator.java:85)
+	at org.hibernate.loader.custom.CustomLoader.getResultList(CustomLoader.java:433)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2506)
+	at org.hibernate.loader.Loader.list(Loader.java:2501)
+	at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:338)
+	at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:2223)
+	at org.hibernate.internal.AbstractSharedSessionContract.list(AbstractSharedSessionContract.java:1069)
+	at org.hibernate.query.internal.NativeQueryImpl.doList(NativeQueryImpl.java:170)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1505)
+	at org.hibernate.query.Query.getResultList(Query.java:132)
+	at cc.saxfore.incubation.repository.IBUserNativeRepository.queryUserList(IBUserNativeRepository.java:35)
+	at cc.saxfore.incubation.repository.IBUserNativeRepository$$FastClassBySpringCGLIB$$10de0e9b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	... 62 common frames omitted
+2019-08-11 17:37:45,480 INFO [http-nio-9090-exec-3] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 57] ApiInterceptor afterCompletion ...
+2019-08-11 17:37:45,481 INFO [http-nio-9090-exec-3] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/list, 耗时:10071ms
+2019-08-11 17:37:45,481 INFO [http-nio-9090-exec-3] c.s.i.filter.IncubationFilter [IncubationFilter.java : 71] ----请求参数:{token=[incubation];} ----
+2019-08-11 17:39:12,913 INFO [Thread-9] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 17:39:12,914 INFO [Thread-9] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 17:39:12,917 INFO [Thread-9] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] DatebookHikariCP - Shutdown initiated...
+2019-08-11 17:39:12,919 INFO [Thread-9] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] DatebookHikariCP - Shutdown completed.
+2019-08-11 17:39:12,928 INFO [Thread-9] c.s.i.filter.IncubationFilter [IncubationFilter.java : 49] IncubationFilter destroy ...
+2019-08-11 17:39:43,849 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 50] Starting IncubationApplication on macbook with PID 2406 (/Users/john/gitHub-workspace/incubation/target/classes started by john in /Users/john/gitHub-workspace/incubation)
+2019-08-11 17:39:43,852 INFO [main] c.s.incubation.IncubationApplication [SpringApplication.java : 647] No active profile set, falling back to default profiles: default
+2019-08-11 17:39:44,335 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-11 17:39:44,393 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 51ms. Found 1 repository interfaces.
+2019-08-11 17:39:44,680 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$afebda8a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 17:39:44,885 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9090 (http)
+2019-08-11 17:39:44,900 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9090"]
+2019-08-11 17:39:44,915 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-08-11 17:39:44,915 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-11 17:39:45,023 INFO [main] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-08-11 17:39:45,023 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1147 ms
+2019-08-11 17:39:45,058 INFO [main] c.s.i.filter.IncubationFilter [IncubationFilter.java : 29] IncubationFilter init ...
+2019-08-11 17:39:45,177 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-08-11 17:39:45,351 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-08-11 17:39:45,388 INFO [main] o.h.jpa.internal.util.LogHelper [LogHelper.java : 31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-11 17:39:45,458 INFO [main] org.hibernate.Version [Version.java : 46] HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-11 17:39:45,459 INFO [main] org.hibernate.cfg.Environment [Environment.java : 213] HHH000206: hibernate.properties not found
+2019-08-11 17:39:45,562 INFO [main] o.h.annotations.common.Version [JavaReflectionManager.java : 49] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-11 17:39:45,696 INFO [main] org.hibernate.dialect.Dialect [Dialect.java : 157] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-08-11 17:39:46,158 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 17:39:46,613 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 17:39:46,646 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [JpaBaseConfiguration.java : 226] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-11 17:39:46,819 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9090"]
+2019-08-11 17:39:46,858 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9090 (http) with context path '/incubation'
+2019-08-11 17:39:46,860 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 59] Started IncubationApplication in 3.258 seconds (JVM running for 4.259)
+2019-08-11 17:40:13,367 INFO [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-11 17:40:13,367 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-08-11 17:40:13,373 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 6 ms
+2019-08-11 17:40:13,380 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 17:40:13,386 INFO [http-nio-9090-exec-1] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 17:40:13,452 INFO [http-nio-9090-exec-1] c.s.i.e.IBGlobalExceptionHandler [IBGlobalExceptionHandler.java : 36] ----请求异常:/incubation/api/user/list, 信息：Could not resolve PropertyAccess for del_flag on class cc.saxfore.incubation.entity.IBUser; nested exception is org.hibernate.PropertyNotFoundException: Could not resolve PropertyAccess for del_flag on class cc.saxfore.incubation.entity.IBUser ----
+2019-08-11 17:40:13,454 ERROR [http-nio-9090-exec-1] c.s.i.e.IBGlobalExceptionHandler [IBGlobalExceptionHandler.java : 37] 异常信息:
+org.springframework.orm.jpa.JpaSystemException: Could not resolve PropertyAccess for del_flag on class cc.saxfore.incubation.entity.IBUser; nested exception is org.hibernate.PropertyNotFoundException: Could not resolve PropertyAccess for del_flag on class cc.saxfore.incubation.entity.IBUser
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:351)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:253)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:527)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:153)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at cc.saxfore.incubation.repository.IBUserNativeRepository$$EnhancerBySpringCGLIB$$e44eac9.queryUserList(<generated>)
+	at cc.saxfore.incubation.service.impl.IBUserServiceImpl.findUserList(IBUserServiceImpl.java:90)
+	at cc.saxfore.incubation.controller.IBApiUserController.list(IBApiUserController.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at cc.saxfore.incubation.filter.IncubationFilter.doFilter(IncubationFilter.java:41)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.hibernate.PropertyNotFoundException: Could not resolve PropertyAccess for del_flag on class cc.saxfore.incubation.entity.IBUser
+	at org.hibernate.property.access.internal.PropertyAccessStrategyChainedImpl.buildPropertyAccess(PropertyAccessStrategyChainedImpl.java:35)
+	at org.hibernate.transform.AliasToBeanResultTransformer.initialize(AliasToBeanResultTransformer.java:104)
+	at org.hibernate.transform.AliasToBeanResultTransformer.transformTuple(AliasToBeanResultTransformer.java:68)
+	at org.hibernate.hql.internal.HolderInstantiator.instantiate(HolderInstantiator.java:85)
+	at org.hibernate.loader.custom.CustomLoader.getResultList(CustomLoader.java:433)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2506)
+	at org.hibernate.loader.Loader.list(Loader.java:2501)
+	at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:338)
+	at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:2223)
+	at org.hibernate.internal.AbstractSharedSessionContract.list(AbstractSharedSessionContract.java:1069)
+	at org.hibernate.query.internal.NativeQueryImpl.doList(NativeQueryImpl.java:170)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1505)
+	at org.hibernate.query.Query.getResultList(Query.java:132)
+	at cc.saxfore.incubation.repository.IBUserNativeRepository.queryUserList(IBUserNativeRepository.java:35)
+	at cc.saxfore.incubation.repository.IBUserNativeRepository$$FastClassBySpringCGLIB$$10de0e9b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	... 62 common frames omitted
+2019-08-11 17:40:13,506 INFO [http-nio-9090-exec-1] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 57] ApiInterceptor afterCompletion ...
+2019-08-11 17:40:13,507 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/list, 耗时:127ms
+2019-08-11 17:40:13,508 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 71] ----请求参数:{token=[incubation];} ----
+2019-08-11 17:41:42,896 INFO [Thread-9] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 17:41:42,896 INFO [Thread-9] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 17:41:42,899 INFO [Thread-9] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] DatebookHikariCP - Shutdown initiated...
+2019-08-11 17:41:42,903 INFO [Thread-9] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] DatebookHikariCP - Shutdown completed.
+2019-08-11 17:41:42,912 INFO [Thread-9] c.s.i.filter.IncubationFilter [IncubationFilter.java : 49] IncubationFilter destroy ...
+2019-08-11 17:42:37,944 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 50] Starting IncubationApplication on macbook with PID 2421 (/Users/john/gitHub-workspace/incubation/target/classes started by john in /Users/john/gitHub-workspace/incubation)
+2019-08-11 17:42:37,946 INFO [main] c.s.incubation.IncubationApplication [SpringApplication.java : 647] No active profile set, falling back to default profiles: default
+2019-08-11 17:42:38,439 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-11 17:42:38,496 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 51ms. Found 1 repository interfaces.
+2019-08-11 17:42:38,757 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d7db709a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 17:42:38,982 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 9090 (http)
+2019-08-11 17:42:38,999 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-9090"]
+2019-08-11 17:42:39,006 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-08-11 17:42:39,007 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-11 17:42:39,104 INFO [main] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-08-11 17:42:39,104 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1133 ms
+2019-08-11 17:42:39,137 INFO [main] c.s.i.filter.IncubationFilter [IncubationFilter.java : 29] IncubationFilter init ...
+2019-08-11 17:42:39,234 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] DatebookHikariCP - Starting...
+2019-08-11 17:42:39,404 INFO [main] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] DatebookHikariCP - Start completed.
+2019-08-11 17:42:39,441 INFO [main] o.h.jpa.internal.util.LogHelper [LogHelper.java : 31] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-11 17:42:39,498 INFO [main] org.hibernate.Version [Version.java : 46] HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-11 17:42:39,499 INFO [main] org.hibernate.cfg.Environment [Environment.java : 213] HHH000206: hibernate.properties not found
+2019-08-11 17:42:39,593 INFO [main] o.h.annotations.common.Version [JavaReflectionManager.java : 49] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-11 17:42:39,699 INFO [main] org.hibernate.dialect.Dialect [Dialect.java : 157] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-08-11 17:42:40,154 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 17:42:40,612 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 17:42:40,644 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [JpaBaseConfiguration.java : 226] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-11 17:42:40,824 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-9090"]
+2019-08-11 17:42:40,867 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 202] Tomcat started on port(s): 9090 (http) with context path '/incubation'
+2019-08-11 17:42:40,870 INFO [main] c.s.incubation.IncubationApplication [StartupInfoLogger.java : 59] Started IncubationApplication in 3.192 seconds (JVM running for 4.189)
+2019-08-11 17:43:24,200 INFO [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/incubation] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-11 17:43:24,201 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2019-08-11 17:43:24,207 INFO [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 6 ms
+2019-08-11 17:43:24,214 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 34] IncubationFilter doFilter ...
+2019-08-11 17:43:24,220 INFO [http-nio-9090-exec-1] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 30] ApiInterceptor preHandle ...
+2019-08-11 17:43:24,337 INFO [http-nio-9090-exec-1] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 51] ApiInterceptor postHandle ...
+2019-08-11 17:43:24,338 INFO [http-nio-9090-exec-1] c.s.i.interceptor.ApiInterceptor [ApiInterceptor.java : 57] ApiInterceptor afterCompletion ...
+2019-08-11 17:43:24,339 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 43] ----请求地址:/incubation/api/user/list, 耗时:125ms
+2019-08-11 17:43:24,340 INFO [http-nio-9090-exec-1] c.s.i.filter.IncubationFilter [IncubationFilter.java : 71] ----请求参数:{token=[incubation];} ----
+2019-08-11 17:44:04,956 INFO [Thread-9] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 17:44:04,958 INFO [Thread-9] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java : 597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 17:44:04,961 INFO [Thread-9] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] DatebookHikariCP - Shutdown initiated...
+2019-08-11 17:44:04,964 INFO [Thread-9] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] DatebookHikariCP - Shutdown completed.
+2019-08-11 17:44:04,974 INFO [Thread-9] c.s.i.filter.IncubationFilter [IncubationFilter.java : 49] IncubationFilter destroy ...

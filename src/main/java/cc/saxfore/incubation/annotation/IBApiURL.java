@@ -1,4 +1,4 @@
-package cc.saxfore.incubation.common;
+package cc.saxfore.incubation.annotation;
 
 import java.lang.annotation.*;
 
