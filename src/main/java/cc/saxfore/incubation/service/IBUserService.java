@@ -38,6 +38,8 @@ public interface IBUserService {
 
     IBUser findByUsernameAndPassword(String username, String password);
 
-    List<IBUser> findUserList();
+    List<IBUser> findUserListByJpa();
+
+    List<IBUser> findUserListByNative();
 
 }

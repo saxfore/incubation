@@ -86,7 +86,12 @@ public class IBUserServiceImpl implements IBUserService {
     }
 
     @Override
-    public List<IBUser> findUserList() {
+    public List<IBUser> findUserListByJpa() {
+        return repository.findByDelFlag(0);
+    }
+
+    @Override
+    public List<IBUser> findUserListByNative() {
         return nativeRepository.queryUserList(0);
     }
 

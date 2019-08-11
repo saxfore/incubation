@@ -1,7 +1,7 @@
 package cc.saxfore.incubation.repository;
 
 import cc.saxfore.incubation.entity.IBUser;
-import org.hibernate.query.internal.NativeQueryImpl;
+import org.hibernate.SQLQuery;
 import org.hibernate.transform.Transformers;
 import org.springframework.stereotype.Repository;
 
@@ -23,6 +23,13 @@ public class IBUserNativeRepository {
     @PersistenceContext
     EntityManager entityManager;
 
+    /**
+     * 此处只是为了演示使用原生sql查询：
+     * 该方法和{@link IBUserRepository#findByDelFlag(long delFlag)}功能相同
+     *
+     * @param delFlag
+     * @return
+     */
     public List<IBUser> queryUserList(long delFlag) {
         StringBuilder sql = new StringBuilder();
         sql.append(" select id, username, password, phone, address, del_flag delFlag,");
@@ -37,7 +44,11 @@ public class IBUserNativeRepository {
         if (delFlag >= 0) {
             nativeQuery.setParameter("delFlag", delFlag);
         }
-        List<IBUser> userList = nativeQuery.unwrap(NativeQueryImpl.class).setResultTransformer(Transformers.aliasToBean(IBUser.class)).getResultList();
+
+        List<IBUser> userList = nativeQuery.unwrap(SQLQuery.class)
+                .setResultTransformer(Transformers.aliasToBean(IBUser.class))
+                .getResultList();
+
         return userList;
     }
 

@@ -36,7 +36,7 @@ public class IBApiUserController extends IBBaseController {
      */
     @GetMapping("/list")
     public IBResponse list() {
-        List<IBUser> userList = service.findUserList();
+        List<IBUser> userList = service.findUserListByNative();
         return IBRespResult.success(userList);
     }
 

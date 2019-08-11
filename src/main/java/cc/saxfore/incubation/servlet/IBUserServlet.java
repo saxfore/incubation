@@ -21,7 +21,7 @@ import java.io.IOException;
  * 创建时间：2019/8/11 11:44 AM
  * 创 建 人：wangjiang
  */
-@WebServlet(name = "ibUserServlet", urlPatterns = "/servlet/user")
+@WebServlet(name = "IBUserServlet", urlPatterns = "/servlet/user")
 public class IBUserServlet extends HttpServlet {
     private static final Logger log = LoggerFactory.getLogger(IBUserServlet.class);
 

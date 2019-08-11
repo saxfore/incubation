@@ -95,6 +95,9 @@ http://127.0.0.1:9090/incubation/view/user/home?username=admin&password=&accessT
 http://127.0.0.1:9090/incubation/api/user/1
 http://127.0.0.1:9090/incubation/api/user/1?accessToken=incubation
 http://127.0.0.1:9090/incubation/api/user/list?accessToken=incubation
+
+// servlet
+http://127.0.0.1:9090/incubation/servlet/user?username=admin&password=admin
 ```
 
 ### 数据库报错
