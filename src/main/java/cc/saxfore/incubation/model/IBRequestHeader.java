@@ -4,24 +4,24 @@ import java.io.Serializable;
 
 /**
  * 项目名称：incubation
- * 类 名 称：IBHeader
+ * 类 名 称：IBRequestHeader
  * 类 描 述：TODO
  * 创建时间：2019/8/9 4:24 PM
  * 创 建 人：wangjiang
  */
-public class IBHeader implements Serializable {
+public class IBRequestHeader implements Serializable {
 
-    private String token;
+    private String userId;
     private String versionNo;
-    private String sigaural;
+    private String signature;
     private long timestamp;
 
-    public String getToken() {
-        return token;
+    public String getUserId() {
+        return userId;
     }
 
-    public void setToken(String token) {
-        this.token = token;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     public String getVersionNo() {
@@ -32,12 +32,12 @@ public class IBHeader implements Serializable {
         this.versionNo = versionNo;
     }
 
-    public String getSigaural() {
-        return sigaural;
+    public String getSignature() {
+        return signature;
     }
 
-    public void setSigaural(String sigaural) {
-        this.sigaural = sigaural;
+    public void setSignature(String signature) {
+        this.signature = signature;
     }
 
     public long getTimestamp() {

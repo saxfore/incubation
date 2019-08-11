@@ -15,6 +15,10 @@ public class IBResponse<T> implements Serializable {
     protected String msg;
     protected T data;
 
+    public IBResponse() {
+
+    }
+
     public IBResponse(int code, T data) {
         this.code = code;
         this.data = data;

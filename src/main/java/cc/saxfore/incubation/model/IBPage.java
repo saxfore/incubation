@@ -14,6 +14,7 @@ public class IBPage implements Serializable {
     private String searchKey;
     private String currentPage;
     private String pageSize;
+    private String totalPage;
     private String total;
 
     public String getSearchKey() {
@@ -38,6 +39,14 @@ public class IBPage implements Serializable {
 
     public void setPageSize(String pageSize) {
         this.pageSize = pageSize;
+    }
+
+    public String getTotalPage() {
+        return totalPage;
+    }
+
+    public void setTotalPage(String totalPage) {
+        this.totalPage = totalPage;
     }
 
     public String getTotal() {
