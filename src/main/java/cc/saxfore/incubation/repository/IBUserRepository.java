@@ -11,4 +11,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * 创 建 人：wangjiang
  */
 public interface IBUserRepository extends JpaRepository<IBUser, String> {
+
+    public IBUser findByUsernameAndPassword(String username, String password);
+
 }

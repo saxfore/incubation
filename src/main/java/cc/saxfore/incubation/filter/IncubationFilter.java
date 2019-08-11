@@ -22,16 +22,16 @@ import java.util.Map;
  */
 @Component
 public class IncubationFilter implements Filter {
-    private static final Logger logger = LoggerFactory.getLogger(IncubationFilter.class);
+    private static final Logger log = LoggerFactory.getLogger(IncubationFilter.class);
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        logger.info("IncubationFilter init ...");
+        log.info("IncubationFilter init ...");
     }
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        logger.info("IncubationFilter doFilter ...");
+        log.info("IncubationFilter doFilter ...");
 
         HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
         HttpServletResponse httpServletResponse = (HttpServletResponse) servletResponse;
@@ -40,13 +40,13 @@ public class IncubationFilter implements Filter {
         String reqUrl = httpServletRequest.getRequestURI();
         filterChain.doFilter(servletRequest, servletResponse);
         Long endTime = new Date().getTime();
-        logger.info("----请求地址:{}, 耗时:{}ms", reqUrl, (endTime - beginTime));
+        log.info("----请求地址:{}, 耗时:{}ms", reqUrl, (endTime - beginTime));
         printRequestParams(httpServletRequest);
     }
 
     @Override
     public void destroy() {
-        logger.info("IncubationFilter destroy ...");
+        log.info("IncubationFilter destroy ...");
     }
 
     /**
@@ -68,7 +68,7 @@ public class IncubationFilter implements Filter {
 
         if (!IBStringUtil.isBlank(content.toString())) {
             String reqParams = "{" + content.toString() + "}";
-            logger.info("----请求参数:{} ----", reqParams);
+            log.info("----请求参数:{} ----", reqParams);
         }
     }
 

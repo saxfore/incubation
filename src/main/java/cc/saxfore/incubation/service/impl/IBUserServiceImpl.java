@@ -1,6 +1,7 @@
 package cc.saxfore.incubation.service.impl;
 
 import cc.saxfore.incubation.entity.IBUser;
+import cc.saxfore.incubation.repository.IBUserNativeRepository;
 import cc.saxfore.incubation.repository.IBUserRepository;
 import cc.saxfore.incubation.service.IBUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,8 @@ public class IBUserServiceImpl implements IBUserService {
 
     @Autowired
     IBUserRepository repository;
+    @Autowired
+    IBUserNativeRepository nativeRepository;
 
     @Override
     public IBUser save(IBUser ibUser) {
@@ -75,7 +78,16 @@ public class IBUserServiceImpl implements IBUserService {
     @Override
     public void deleteAll() {
         repository.deleteAll();
-        ;
+    }
+
+    @Override
+    public IBUser findByUsernameAndPassword(String username, String password) {
+        return repository.findByUsernameAndPassword(username, password);
+    }
+
+    @Override
+    public List<IBUser> findUserList() {
+        return nativeRepository.queryUserList("", "");
     }
 
 }

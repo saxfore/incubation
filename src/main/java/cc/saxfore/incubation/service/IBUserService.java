@@ -36,4 +36,8 @@ public interface IBUserService {
 
     void deleteAll();
 
+    IBUser findByUsernameAndPassword(String username, String password);
+
+    List<IBUser> findUserList();
+
 }

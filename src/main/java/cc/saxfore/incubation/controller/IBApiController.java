@@ -5,6 +5,8 @@ import cc.saxfore.incubation.common.IBRespResult;
 import cc.saxfore.incubation.entity.IBUser;
 import cc.saxfore.incubation.model.IBResponse;
 import cc.saxfore.incubation.service.IBUserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,6 +23,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api")
 public class IBApiController extends IBBaseController {
+    private static final Logger log = LoggerFactory.getLogger(IBApiController.class);
 
     @Autowired
     IBUserService service;

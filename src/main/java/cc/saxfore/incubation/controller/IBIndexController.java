@@ -1,7 +1,12 @@
 package cc.saxfore.incubation.controller;
 
 import cc.saxfore.incubation.common.IBRespResult;
+import cc.saxfore.incubation.entity.IBUser;
 import cc.saxfore.incubation.model.IBResponse;
+import cc.saxfore.incubation.service.IBUserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -13,16 +18,18 @@ import org.springframework.web.bind.annotation.*;
  */
 @CrossOrigin
 @RestController
-@RequestMapping("/login")
+@RequestMapping("/user")
 public class IBIndexController extends IBBaseController {
+    private static final Logger log = LoggerFactory.getLogger(IBIndexController.class);
+
+    @Autowired
+    IBUserService userService;
 
     @GetMapping("/index")
     public IBResponse index(@RequestParam("username") String username, @RequestParam("password") String password) {
-
-        System.out.println("username = [" + username + "], password = [" + password + "]");
-
-        return IBRespResult.success();
-
+        log.info("username = [{}], password = [{}]", username, password);
+        IBUser user = userService.findByUsernameAndPassword(username, password);
+        return IBRespResult.success(user);
     }
 
 }
