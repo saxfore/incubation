@@ -36,9 +36,9 @@ public class ApiInterceptor extends HandlerInterceptorAdapter {
         }
 
         if (apiURL != null) {
-            String token = request.getParameter("token");
-            if (IBStringUtil.isBlank(token) || !specialToken.equalsIgnoreCase(token)) {
-                IBRespResult.fail(response, "验证未通过！");
+            String accessToken = request.getParameter("accessToken");
+            if (IBStringUtil.isBlank(accessToken) || !specialToken.equalsIgnoreCase(accessToken)) {
+                IBRespResult.fail(response, "您无权访问该地址！");
                 return false;
             }
         }

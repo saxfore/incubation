@@ -25,17 +25,18 @@ public class IBUserNativeRepository {
 
     public List<IBUser> queryUserList(long delFlag) {
         StringBuilder sql = new StringBuilder();
-        sql.append(" select id, username, password, del_flag delFlag ");
+        sql.append(" select id, username, password, phone, address, del_flag delFlag,");
+        sql.append(" create_time createTime, create_user createUser, update_time updateTime, update_user updateUser");
         sql.append(" from IB_User");
         sql.append(" where 1=1");
         if (delFlag >= 0) {
             sql.append(" and del_flag=:delFlag");
         }
 
-
         Query nativeQuery = entityManager.createNativeQuery(sql.toString());
-//        nativeQuery.setParameter("username", username).setParameter("password", password);
-
+        if (delFlag >= 0) {
+            nativeQuery.setParameter("delFlag", delFlag);
+        }
         List<IBUser> userList = nativeQuery.unwrap(NativeQueryImpl.class).setResultTransformer(Transformers.aliasToBean(IBUser.class)).getResultList();
         return userList;
     }

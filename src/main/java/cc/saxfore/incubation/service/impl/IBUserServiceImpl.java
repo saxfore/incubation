@@ -87,7 +87,7 @@ public class IBUserServiceImpl implements IBUserService {
 
     @Override
     public List<IBUser> findUserList() {
-        return nativeRepository.queryUserList("", "");
+        return nativeRepository.queryUserList(0);
     }
 
 }

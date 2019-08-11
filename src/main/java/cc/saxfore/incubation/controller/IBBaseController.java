@@ -5,6 +5,10 @@ import cc.saxfore.incubation.model.IBResponse;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * 项目名称：incubation
@@ -18,9 +22,20 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class IBBaseController {
 
-    @RequestMapping("/")
+    /**
+     * 获取HttpServletRequest
+     *
+     * @return
+     */
+    public HttpServletRequest getRequest() {
+        ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+        HttpServletRequest request = attributes.getRequest();
+        return request;
+    }
+
+    @RequestMapping(value = {"/", "/index"})
     public IBResponse index() {
-        return IBRespResult.fail("检查你的访问地址是否正确！");
+        return IBRespResult.fail("欢迎访问incubation项目！");
     }
 
 }

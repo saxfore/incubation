@@ -21,6 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 @Component
 public class LoginInterceptor extends HandlerInterceptorAdapter {
     private static final Logger log = LoggerFactory.getLogger(LoginInterceptor.class);
+    private static final String specialToken = "incubation";
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
@@ -31,7 +32,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
         String accessToken = request.getParameter("accessToken");
 
         // 没有登录
-        boolean isLogin = (IBStringUtil.isNotBlank(username) && IBStringUtil.isNotBlank(password)) || IBStringUtil.isNotBlank(accessToken);
+        boolean isLogin = (IBStringUtil.isNotBlank(username) && IBStringUtil.isNotBlank(password)) || specialToken.equals(accessToken);
         if (!isLogin) {
             IBRespResult.fail(response, "请先登录！");
         }
