@@ -1,98 +1,83 @@
 package cc.saxfore.incubation.service.impl;
 
-import cc.saxfore.incubation.entity.IBUser;
-import cc.saxfore.incubation.repository.IBUserNativeRepository;
-import cc.saxfore.incubation.repository.IBUserRepository;
-import cc.saxfore.incubation.service.IBUserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+import javax.annotation.Resource;
 import java.util.List;
-import java.util.Optional;
-
+import cc.saxfore.incubation.mapper.IBUserMapper;
+import cc.saxfore.incubation.entity.IBUser;
+import cc.saxfore.incubation.service.IBUserService;
 /**
  * 项目名称：incubation
- * 类 名 称：IBUserService
+ * 类 名 称：${NAME}
  * 类 描 述：TODO
- * 创建时间：2019/8/9 6:24 PM
+ * 创建时间：2019/8/12 5:46 PM
  * 创 建 人：wangjiang
  */
 @Service
-public class IBUserServiceImpl implements IBUserService {
+public class IBUserServiceImpl implements IBUserService{
 
-    @Autowired
-    IBUserRepository repository;
-    @Autowired
-    IBUserNativeRepository nativeRepository;
+    @Resource
+    private IBUserMapper iBUserMapper;
 
     @Override
-    public IBUser save(IBUser ibUser) {
-        return repository.save(ibUser);
+    public int deleteByPrimaryKey(String id) {
+        return iBUserMapper.deleteByPrimaryKey(id);
     }
 
     @Override
-    public List<IBUser> saveAll(List<IBUser> ibUsers) {
-        return repository.saveAll(ibUsers);
+    public int insert(IBUser record) {
+        return iBUserMapper.insert(record);
     }
 
     @Override
-    public Optional<IBUser> findById(String id) {
-        return repository.findById(id);
+    public int insertOrUpdate(IBUser record) {
+        return iBUserMapper.insertOrUpdate(record);
     }
 
     @Override
-    public boolean existsById(String id) {
-        return repository.existsById(id);
+    public int insertOrUpdateSelective(IBUser record) {
+        return iBUserMapper.insertOrUpdateSelective(record);
     }
 
     @Override
-    public List<IBUser> findAll() {
-        return repository.findAll();
+    public int insertSelective(IBUser record) {
+        return iBUserMapper.insertSelective(record);
     }
 
     @Override
-    public List<IBUser> findAllById(List<String> ids) {
-        return repository.findAllById(ids);
+    public IBUser selectByPrimaryKey(String id) {
+        return iBUserMapper.selectByPrimaryKey(id);
     }
 
     @Override
-    public long count() {
-        return repository.count();
+    public int updateByPrimaryKeySelective(IBUser record) {
+        return iBUserMapper.updateByPrimaryKeySelective(record);
     }
 
     @Override
-    public void deleteById(String id) {
-        repository.deleteById(id);
+    public int updateByPrimaryKey(IBUser record) {
+        return iBUserMapper.updateByPrimaryKey(record);
     }
 
     @Override
-    public void delete(IBUser ibUser) {
-        repository.delete(ibUser);
+    public int updateBatch(List<IBUser> list) {
+        return iBUserMapper.updateBatch(list);
     }
 
     @Override
-    public void deleteAll(List<IBUser> ibUsers) {
-        repository.deleteAll(ibUsers);
-    }
-
-    @Override
-    public void deleteAll() {
-        repository.deleteAll();
+    public int batchInsert(List<IBUser> list) {
+        return iBUserMapper.batchInsert(list);
     }
 
     @Override
     public IBUser findByUsernameAndPassword(String username, String password) {
-        return repository.findByUsernameAndPassword(username, password);
+        return iBUserMapper.findByUsernameAndPassword(username, password);
     }
 
     @Override
-    public List<IBUser> findUserListByJpa() {
-        return repository.findByDelFlag(0);
+    public List<IBUser> listAll() {
+        return iBUserMapper.listAll();
     }
 
-    @Override
-    public List<IBUser> findUserListByNative() {
-        return nativeRepository.queryUserList(0);
-    }
 
 }

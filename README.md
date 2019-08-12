@@ -98,6 +98,9 @@ http://127.0.0.1:9090/incubation/api/user/list?accessToken=incubation
 
 // servlet
 http://127.0.0.1:9090/incubation/servlet/user?username=admin&password=admin
+
+// swagger
+http://127.0.0.1:9090/incubation/swagger-ui.html#/
 ```
 
 ### 数据库报错

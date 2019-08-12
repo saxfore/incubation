@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.saxfore.incubation.mapper.IBUserMapper">
+    <resultMap id="BaseResultMap" type="cc.saxfore.incubation.entity.IBUser">
+        <!--@mbg.generated-->
+        <id column="id" jdbcType="VARCHAR" property="id"/>
+        <result column="username" jdbcType="VARCHAR" property="username"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="phone" jdbcType="VARCHAR" property="phone"/>
+        <result column="address" jdbcType="VARCHAR" property="address"/>
+        <result column="del_flag" jdbcType="INTEGER" property="delFlag"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="create_user" jdbcType="VARCHAR" property="createUser"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="update_user" jdbcType="VARCHAR" property="updateUser"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        id, username, `password`, phone, address, del_flag, create_time, create_user, update_time,
+        update_user
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from IB_User
+        where id = #{id,jdbcType=VARCHAR}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+        <!--@mbg.generated-->
+        delete from IB_User
+        where id = #{id,jdbcType=VARCHAR}
+    </delete>
+    <insert id="insert" parameterType="cc.saxfore.incubation.entity.IBUser">
+        <!--@mbg.generated-->
+        insert into IB_User (id, username, `password`,
+        phone, address, del_flag,
+        create_time, create_user, update_time,
+        update_user)
+        values (#{id,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
+        #{phone,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{delFlag,jdbcType=INTEGER},
+        #{createTime,jdbcType=TIMESTAMP}, #{createUser,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP},
+        #{updateUser,jdbcType=VARCHAR})
+    </insert>
+    <insert id="insertSelective" parameterType="cc.saxfore.incubation.entity.IBUser">
+        <!--@mbg.generated-->
+        insert into IB_User
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="username != null">
+                username,
+            </if>
+            <if test="password != null">
+                `password`,
+            </if>
+            <if test="phone != null">
+                phone,
+            </if>
+            <if test="address != null">
+                address,
+            </if>
+            <if test="delFlag != null">
+                del_flag,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+            <if test="createUser != null">
+                create_user,
+            </if>
+            <if test="updateTime != null">
+                update_time,
+            </if>
+            <if test="updateUser != null">
+                update_user,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=VARCHAR},
+            </if>
+            <if test="username != null">
+                #{username,jdbcType=VARCHAR},
+            </if>
+            <if test="password != null">
+                #{password,jdbcType=VARCHAR},
+            </if>
+            <if test="phone != null">
+                #{phone,jdbcType=VARCHAR},
+            </if>
+            <if test="address != null">
+                #{address,jdbcType=VARCHAR},
+            </if>
+            <if test="delFlag != null">
+                #{delFlag,jdbcType=INTEGER},
+            </if>
+            <if test="createTime != null">
+                #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="createUser != null">
+                #{createUser,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateUser != null">
+                #{updateUser,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="cc.saxfore.incubation.entity.IBUser">
+        <!--@mbg.generated-->
+        update IB_User
+        <set>
+            <if test="username != null">
+                username = #{username,jdbcType=VARCHAR},
+            </if>
+            <if test="password != null">
+                `password` = #{password,jdbcType=VARCHAR},
+            </if>
+            <if test="phone != null">
+                phone = #{phone,jdbcType=VARCHAR},
+            </if>
+            <if test="address != null">
+                address = #{address,jdbcType=VARCHAR},
+            </if>
+            <if test="delFlag != null">
+                del_flag = #{delFlag,jdbcType=INTEGER},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="createUser != null">
+                create_user = #{createUser,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateUser != null">
+                update_user = #{updateUser,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=VARCHAR}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="cc.saxfore.incubation.entity.IBUser">
+        <!--@mbg.generated-->
+        update IB_User
+        set username = #{username,jdbcType=VARCHAR},
+        `password` = #{password,jdbcType=VARCHAR},
+        phone = #{phone,jdbcType=VARCHAR},
+        address = #{address,jdbcType=VARCHAR},
+        del_flag = #{delFlag,jdbcType=INTEGER},
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+        create_user = #{createUser,jdbcType=VARCHAR},
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+        update_user = #{updateUser,jdbcType=VARCHAR}
+        where id = #{id,jdbcType=VARCHAR}
+    </update>
+    <update id="updateBatch" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update IB_User
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="username = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when id = #{item.id,jdbcType=VARCHAR} then #{item.username,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="`password` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when id = #{item.id,jdbcType=VARCHAR} then #{item.password,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="phone = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when id = #{item.id,jdbcType=VARCHAR} then #{item.phone,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="address = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when id = #{item.id,jdbcType=VARCHAR} then #{item.address,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="del_flag = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when id = #{item.id,jdbcType=VARCHAR} then #{item.delFlag,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="create_time = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when id = #{item.id,jdbcType=VARCHAR} then #{item.createTime,jdbcType=TIMESTAMP}
+                </foreach>
+            </trim>
+            <trim prefix="create_user = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when id = #{item.id,jdbcType=VARCHAR} then #{item.createUser,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="update_time = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when id = #{item.id,jdbcType=VARCHAR} then #{item.updateTime,jdbcType=TIMESTAMP}
+                </foreach>
+            </trim>
+            <trim prefix="update_user = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when id = #{item.id,jdbcType=VARCHAR} then #{item.updateUser,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+        </trim>
+        where id in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.id,jdbcType=VARCHAR}
+        </foreach>
+    </update>
+    <insert id="batchInsert" parameterType="map">
+        <!--@mbg.generated-->
+        insert into IB_User
+        (id, username, `password`, phone, address, del_flag, create_time, create_user, update_time,
+        update_user)
+        values
+        <foreach collection="list" item="item" separator=",">
+            (#{item.id,jdbcType=VARCHAR}, #{item.username,jdbcType=VARCHAR}, #{item.password,jdbcType=VARCHAR},
+            #{item.phone,jdbcType=VARCHAR}, #{item.address,jdbcType=VARCHAR}, #{item.delFlag,jdbcType=INTEGER},
+            #{item.createTime,jdbcType=TIMESTAMP}, #{item.createUser,jdbcType=VARCHAR},
+            #{item.updateTime,jdbcType=TIMESTAMP},
+            #{item.updateUser,jdbcType=VARCHAR})
+        </foreach>
+    </insert>
+    <insert id="insertOrUpdate" parameterType="cc.saxfore.incubation.entity.IBUser">
+        <!--@mbg.generated-->
+        insert into IB_User
+        (id, username, `password`, phone, address, del_flag, create_time, create_user, update_time,
+        update_user)
+        values
+        (#{id,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
+        #{phone,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{delFlag,jdbcType=INTEGER},
+        #{createTime,jdbcType=TIMESTAMP}, #{createUser,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP},
+        #{updateUser,jdbcType=VARCHAR})
+        on duplicate key update
+        id = #{id,jdbcType=VARCHAR},
+        username = #{username,jdbcType=VARCHAR},
+        `password` = #{password,jdbcType=VARCHAR},
+        phone = #{phone,jdbcType=VARCHAR},
+        address = #{address,jdbcType=VARCHAR},
+        del_flag = #{delFlag,jdbcType=INTEGER},
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+        create_user = #{createUser,jdbcType=VARCHAR},
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+        update_user = #{updateUser,jdbcType=VARCHAR}
+    </insert>
+    <insert id="insertOrUpdateSelective" parameterType="cc.saxfore.incubation.entity.IBUser">
+        <!--@mbg.generated-->
+        insert into IB_User
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="username != null">
+                username,
+            </if>
+            <if test="password != null">
+                `password`,
+            </if>
+            <if test="phone != null">
+                phone,
+            </if>
+            <if test="address != null">
+                address,
+            </if>
+            <if test="delFlag != null">
+                del_flag,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+            <if test="createUser != null">
+                create_user,
+            </if>
+            <if test="updateTime != null">
+                update_time,
+            </if>
+            <if test="updateUser != null">
+                update_user,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=VARCHAR},
+            </if>
+            <if test="username != null">
+                #{username,jdbcType=VARCHAR},
+            </if>
+            <if test="password != null">
+                #{password,jdbcType=VARCHAR},
+            </if>
+            <if test="phone != null">
+                #{phone,jdbcType=VARCHAR},
+            </if>
+            <if test="address != null">
+                #{address,jdbcType=VARCHAR},
+            </if>
+            <if test="delFlag != null">
+                #{delFlag,jdbcType=INTEGER},
+            </if>
+            <if test="createTime != null">
+                #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="createUser != null">
+                #{createUser,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateUser != null">
+                #{updateUser,jdbcType=VARCHAR},
+            </if>
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="id != null">
+                id = #{id,jdbcType=VARCHAR},
+            </if>
+            <if test="username != null">
+                username = #{username,jdbcType=VARCHAR},
+            </if>
+            <if test="password != null">
+                `password` = #{password,jdbcType=VARCHAR},
+            </if>
+            <if test="phone != null">
+                phone = #{phone,jdbcType=VARCHAR},
+            </if>
+            <if test="address != null">
+                address = #{address,jdbcType=VARCHAR},
+            </if>
+            <if test="delFlag != null">
+                del_flag = #{delFlag,jdbcType=INTEGER},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="createUser != null">
+                create_user = #{createUser,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateUser != null">
+                update_user = #{updateUser,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+    <select id="findByUsernameAndPassword" resultType="cc.saxfore.incubation.entity.IBUser">
+        select
+        id, username, `password`, phone, address, del_flag, create_time, create_user, update_time, update_user
+        from
+        IB_User
+        where 1=1
+        <if test="username != null and username != ''">
+            and username = #{username}
+        </if>
+        <if test="password != null and password != ''">
+            and password = #{password}
+        </if>
+    </select>
+
+    <select id="listAll" resultType="cc.saxfore.incubation.entity.IBUser">
+        select
+        id, username, `password`, phone, address, del_flag, create_time, create_user, update_time, update_user
+        from
+        IB_User
+    </select>
+</mapper>

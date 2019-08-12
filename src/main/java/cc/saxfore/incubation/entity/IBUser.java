@@ -1,36 +1,33 @@
 package cc.saxfore.incubation.entity;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import java.io.Serializable;
 import java.util.Date;
 
 /**
  * 项目名称：incubation
- * 类 名 称：IBUser
+ * 类 名 称：${NAME}
  * 类 描 述：TODO
- * 创建时间：2019/8/9 6:12 PM
+ * 创建时间：2019/8/12 5:46 PM
  * 创 建 人：wangjiang
  */
-@Entity
-@Table(name = "IB_User")
-public class IBUser implements Serializable {
-
-    @Id
+public class IBUser {
     private String id;
+
     private String username;
+
     private String password;
+
     private String phone;
+
     private String address;
-    private long delFlag;
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+
+    private Integer delFlag;
+
     private Date createTime;
+
     private String createUser;
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+
     private Date updateTime;
+
     private String updateUser;
 
     public String getId() {
@@ -73,11 +70,11 @@ public class IBUser implements Serializable {
         this.address = address;
     }
 
-    public long getDelFlag() {
+    public Integer getDelFlag() {
         return delFlag;
     }
 
-    public void setDelFlag(long delFlag) {
+    public void setDelFlag(Integer delFlag) {
         this.delFlag = delFlag;
     }
 

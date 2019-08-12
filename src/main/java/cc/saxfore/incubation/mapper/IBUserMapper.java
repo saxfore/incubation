@@ -1,19 +1,20 @@
-package cc.saxfore.incubation.service;
+package cc.saxfore.incubation.mapper;
 
 import cc.saxfore.incubation.entity.IBUser;
-
 import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * 项目名称：incubation
  * 类 名 称：${NAME}
- * 类 描 述：TODO
  * 创建时间：2019/8/12 5:46 PM
  * 创 建 人：wangjiang
+ * 说明：@Mapper和{@link MapperConfiguration#@MapperScan(basePackages={"cc.saxfore.incubation.mapper"})}意义相同
  */
-public interface IBUserService {
-
-
+//@Mapper
+public interface IBUserMapper {
     int deleteByPrimaryKey(String id);
 
     int insert(IBUser record);
@@ -32,9 +33,9 @@ public interface IBUserService {
 
     int updateBatch(List<IBUser> list);
 
-    int batchInsert(List<IBUser> list);
-
-    IBUser findByUsernameAndPassword(String username, String password);
+    int batchInsert(@Param("list") List<IBUser> list);
 
     List<IBUser> listAll();
+
+    IBUser findByUsernameAndPassword(@Param("username") String username, @Param("password") String password);
 }

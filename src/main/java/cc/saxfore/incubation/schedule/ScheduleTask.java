@@ -34,7 +34,7 @@ public class ScheduleTask {
         log.info("ScheduleTask findDisableUsers ...");
         long beginTime = new Date().getTime();
 
-        List<IBUser> userList = userService.findUserListByNative();
+        List<IBUser> userList = userService.listAll();
         log.info("ScheduleTask findDisableUsers 查询结果：{}", new Gson().toJson(userList));
 
         long endTime = new Date().getTime();
