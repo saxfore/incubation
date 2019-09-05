@@ -8,11 +8,11 @@
 数据库连接池：hikari
 使用spring-data-jpa操作数据库api
 
-自定义过滤器：cc.saxfore.incubation.filter.IncubationFilter
+自定义过滤器：IncubationFilter
 
-自定义拦截器：cc.saxfore.incubation.interceptor.InterceptorConfiguration/LoginInterceptor/ApiInterceptor
+自定义拦截器：InterceptorConfiguration/LoginInterceptor/ApiInterceptor
 
-自定义监听器：cc.saxfore.incubation.listener.IBContextListener/IBSessionListener/IBRequestListener
+自定义监听器：IBContextListener/IBSessionListener/IBRequestListener
 
 自定义异常：cc.saxfore.incubation.exception.IBException/IBExceptionEnum
 实现全局异常捕获：cc.saxfore.incubation.exception.IBGlobalExceptionHandler
