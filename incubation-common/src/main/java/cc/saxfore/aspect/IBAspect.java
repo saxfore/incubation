@@ -19,10 +19,10 @@ import java.util.Arrays;
  */
 @Aspect
 @Component
-public class ControllerClassesAspect {
-    private static final Logger log = LoggerFactory.getLogger(ControllerClassesAspect.class);
+public class IBAspect {
+    private static final Logger log = LoggerFactory.getLogger(IBAspect.class);
 
-    @Pointcut("execution(* cc.saxfore.incubation.cc.saxfore.controller..*.*(..))")
+    @Pointcut("execution(* cc.saxfore..*.*(..))")
     public void controllerClasses() {
 
     }
@@ -35,14 +35,14 @@ public class ControllerClassesAspect {
      */
     @Before("controllerClasses()")
     public void doBefore(JoinPoint joinPoint) throws Throwable {
-        log.info("ControllerClassesAspect doBefore ...");
+        log.info("IBAspect doBefore ...");
 
         String clazzName = joinPoint.getSignature().getDeclaringTypeName();
         String methodName = joinPoint.getSignature().getName();
         String reqArgs = Arrays.toString(joinPoint.getArgs());
 
-        log.info("ControllerClassesAspect doBefore 调用方法: {}.{}", clazzName, methodName);
-        log.info("ControllerClassesAspect doBefore 请求参数: {}", reqArgs);
+        log.info("IBAspect doBefore 调用方法: {}.{}", clazzName, methodName);
+        log.info("IBAspect doBefore 请求参数: {}", reqArgs);
     }
 
     /**
@@ -53,15 +53,15 @@ public class ControllerClassesAspect {
      */
     @AfterReturning(returning = "obj", pointcut = "controllerClasses()")
     public void doAfterReturning(JoinPoint joinPoint, Object obj) throws Throwable {
-        log.info("ControllerClassesAspect doAfterReturning ...");
+        log.info("IBAspect doAfterReturning ...");
 
         String clazzName = joinPoint.getSignature().getDeclaringTypeName();
         String methodName = joinPoint.getSignature().getName();
         String reqArgs = Arrays.toString(joinPoint.getArgs());
         String returnResult = new Gson().toJson(obj);
 
-        log.info("ControllerClassesAspect doAfterReturning 调用方法: {}.{}", clazzName, methodName);
-        log.info("ControllerClassesAspect doAfterReturning 返回结果: {}", returnResult);
+        log.info("IBAspect doAfterReturning 调用方法: {}.{}", clazzName, methodName);
+        log.info("IBAspect doAfterReturning 返回结果: {}", returnResult);
     }
 
     /**
@@ -72,13 +72,13 @@ public class ControllerClassesAspect {
      */
     @AfterThrowing(value = "controllerClasses()", throwing = "exception")
     public void doAfterThrowing(JoinPoint joinPoint, Throwable exception) {
-        log.info("ControllerClassesAspect doAfterThrowing ...");
+        log.info("IBAspect doAfterThrowing ...");
 
         String clazzName = joinPoint.getSignature().getDeclaringTypeName();
         String methodName = joinPoint.getSignature().getName();
         String reqArgs = Arrays.toString(joinPoint.getArgs());
 
-        log.info("ControllerClassesAspect doAfterThrowing 调用方法: {}.{} 发生异常...", clazzName, methodName);
+        log.info("IBAspect doAfterThrowing 调用方法: {}.{} 发生异常...", clazzName, methodName);
     }
 
     /**
@@ -89,15 +89,15 @@ public class ControllerClassesAspect {
      */
     @Around(value = "controllerClasses()")
     public Object doAroundAdvice(ProceedingJoinPoint proceedingJoinPoint) {
-        log.info("ControllerClassesAspect doAroundAdvice ...");
+        log.info("IBAspect doAroundAdvice ...");
 
         String clazzName = proceedingJoinPoint.getSignature().getDeclaringTypeName();
         String methodName = proceedingJoinPoint.getSignature().getName();
-        log.info("ControllerClassesAspect doAroundAdvice 环绕通知的目标方法: {}.{}", clazzName, methodName);
+        log.info("IBAspect doAroundAdvice 环绕通知的目标方法: {}.{}", clazzName, methodName);
 
         try {
             Object obj = proceedingJoinPoint.proceed();
-            log.info("ControllerClassesAspect doAroundAdvice 环绕通知返回：{}", new Gson().toJson(obj));
+            log.info("IBAspect doAroundAdvice 环绕通知返回：{}", new Gson().toJson(obj));
             return obj;
 
         } catch (Throwable throwable) {

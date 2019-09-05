@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * 创 建 人：wangjiang
  */
 @Configuration
-@ServletComponentScan(basePackages = {"cc.saxfore.incubation.servlet.**"})
+@ServletComponentScan(basePackages = {"cc.saxfore.servlet.**"})
 public class ServletConfiguration {
 
 }

@@ -26,7 +26,7 @@ import java.io.IOException;
  * 创 建 人：wangjiang
  */
 @Api(value = "操作用户信息的servlet")
-@WebServlet(name = "IBUserServlet", urlPatterns = "/cc/saxfore/servlet/user")
+@WebServlet(name = "IBUserServlet", urlPatterns = "/servlet/user")
 public class IBUserServlet extends HttpServlet {
     private static final Logger log = LoggerFactory.getLogger(IBUserServlet.class);
 
