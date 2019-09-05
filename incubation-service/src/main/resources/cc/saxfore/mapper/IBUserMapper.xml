@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cc.saxfore.mapper.IBUserMapper">
     <resultMap id="BaseResultMap" type="cc.saxfore.entity.IBUser">
-        <!--@mbg.generated-->
+        
         <id column="id" jdbcType="VARCHAR" property="id"/>
         <result column="username" jdbcType="VARCHAR" property="username"/>
         <result column="password" jdbcType="VARCHAR" property="password"/>
@@ -15,24 +15,24 @@
         <result column="update_user" jdbcType="VARCHAR" property="updateUser"/>
     </resultMap>
     <sql id="Base_Column_List">
-        <!--@mbg.generated-->
+        
         id, username, `password`, phone, address, del_flag, create_time, create_user, update_time,
         update_user
     </sql>
     <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
-        <!--@mbg.generated-->
+        
         select
         <include refid="Base_Column_List"/>
         from IB_User
         where id = #{id,jdbcType=VARCHAR}
     </select>
     <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
-        <!--@mbg.generated-->
+        
         delete from IB_User
         where id = #{id,jdbcType=VARCHAR}
     </delete>
     <insert id="insert" parameterType="cc.saxfore.entity.IBUser">
-        <!--@mbg.generated-->
+        
         insert into IB_User (id, username, `password`,
         phone, address, del_flag,
         create_time, create_user, update_time,
@@ -43,7 +43,7 @@
         #{updateUser,jdbcType=VARCHAR})
     </insert>
     <insert id="insertSelective" parameterType="cc.saxfore.entity.IBUser">
-        <!--@mbg.generated-->
+        
         insert into IB_User
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="id != null">
@@ -111,7 +111,7 @@
         </trim>
     </insert>
     <update id="updateByPrimaryKeySelective" parameterType="cc.saxfore.entity.IBUser">
-        <!--@mbg.generated-->
+        
         update IB_User
         <set>
             <if test="username != null">
@@ -145,7 +145,7 @@
         where id = #{id,jdbcType=VARCHAR}
     </update>
     <update id="updateByPrimaryKey" parameterType="cc.saxfore.entity.IBUser">
-        <!--@mbg.generated-->
+        
         update IB_User
         set username = #{username,jdbcType=VARCHAR},
         `password` = #{password,jdbcType=VARCHAR},
@@ -159,7 +159,7 @@
         where id = #{id,jdbcType=VARCHAR}
     </update>
     <update id="updateBatch" parameterType="java.util.List">
-        <!--@mbg.generated-->
+        
         update IB_User
         <trim prefix="set" suffixOverrides=",">
             <trim prefix="username = case" suffix="end,">
@@ -214,7 +214,7 @@
         </foreach>
     </update>
     <insert id="batchInsert" parameterType="map">
-        <!--@mbg.generated-->
+        
         insert into IB_User
         (id, username, `password`, phone, address, del_flag, create_time, create_user, update_time,
         update_user)
@@ -228,7 +228,7 @@
         </foreach>
     </insert>
     <insert id="insertOrUpdate" parameterType="cc.saxfore.entity.IBUser">
-        <!--@mbg.generated-->
+        
         insert into IB_User
         (id, username, `password`, phone, address, del_flag, create_time, create_user, update_time,
         update_user)
@@ -250,7 +250,7 @@
         update_user = #{updateUser,jdbcType=VARCHAR}
     </insert>
     <insert id="insertOrUpdateSelective" parameterType="cc.saxfore.entity.IBUser">
-        <!--@mbg.generated-->
+        
         insert into IB_User
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="id != null">
