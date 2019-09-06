@@ -13,8 +13,11 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <dependencies>
+    <properties>
+        <IBFastJson.version>1.2.60</IBFastJson.version>
+    </properties>
 
+    <dependencies>
         <!-- 不带版本号的springboot组件不能申明在parent的pom文件中 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -27,8 +30,27 @@
         </dependency>
 
         <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
+
+        <!-- redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${IBFastJson.version}</version>
+        </dependency>
+
     </dependencies>
+
 </project>
