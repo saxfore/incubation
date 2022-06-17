@@ -14,7 +14,7 @@
     <packaging>jar</packaging>
 
     <properties>
-        <IBFastJson.version>1.2.60</IBFastJson.version>
+        <IBFastJson.version>1.2.83</IBFastJson.version>
     </properties>
 
     <dependencies>
